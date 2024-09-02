@@ -7,6 +7,3 @@ Controleur de domaine et règles GPO, gestion utilisateurs et droits forêt -> d
 
 
 
-## **_Adrien Demange_**    
-### **2 septembre 2024**
-#### **Intro Markdown**
