@@ -1,2 +1,4 @@
 Adrien Demange
 2 septembre 2024
+
+https://code-garage.fr/blog/le-guide-simplifie-sur-la-syntaxe-markdown
