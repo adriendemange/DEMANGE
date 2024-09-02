@@ -1,4 +1,4 @@
-## **_ Adrien Demange _**
+## **_Adrien Demange_**
 # **2 septembre 2024**
 # **Intro Markdown**
 
