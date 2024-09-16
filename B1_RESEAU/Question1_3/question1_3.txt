@@ -1,0 +1,20 @@
+Adrien DEMANGE
+16/09 
+Questions 1 à 3 RESEAU MMe DOUHIB
+
+EXERCIES RESEAU
+
+Question 1 :
+ Trouver le masque de sous-réseau, l'adresse réseau, l'adresse de diffusion de chaque adresse IP ?
+ 
+192.168.1.10/24 -> 24 = masque sous réseau / 192.168.1 = adresse réseau / 192.168.255.255 = adresse de diffusion  / MAX STA : 2^(32-24)-2 / Première adresse : 192.168.1.1 / Dernière adresse : 192.168.1.254
+ 
+192.168.245.250/8 -> 8 = masque sous réseau / 192 = adresse réseau / 192.255.255.255 = adresse de diffusion / MAX STA : 2^(32-8)-2 / Première adresse :  192.0.0.1 / Dernière adresse : 192.255.255.254
+
+10.0.0.25/16 -> 16 = masque sous réseau / 10.0.255.255 = adresse réseau / 10.0.255.255 = adresse de diffusion / MAX STA : 2^(32-16)-2 / Première adresse : 10.0.0.1 / Dernière adresse : 10.0.255.254
+
+172.31.120.10/20 -> 20 = masque sous réseau / 172.31.0111 = adresse réseau / 172.31.127.255 = adresse de diffusion / MAX STA : 2^(32-20)-2 / Première adresse : 172.31.127.1     / Dernière adresse : 172.31.127.254
+
+10.0.0.25/25 -> 25 = masque sous réseau / 10.0.0.0 = adresse réseau / 10.0.7.127 = adresse de diffusion / MAX STA : 2^(32-25)-2 / Première adresse : 10.0.0.1  / Dernière adresse :10.0.7.126
+
+192.168.245.250/12 -> 12 = masque sous réseau / 11000000.1010  = adresse réseau / 192.175.255.255 = adresse de diffusion / MAX STA : 2^(32-12)-2 / Première adresse : 192.175.0.1  / Dernière adresse : 192.255.255.254
