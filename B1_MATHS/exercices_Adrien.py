@@ -55,8 +55,17 @@ def exercice_3() :
         a = a + 1
         print(a)
         i = i + 1
+def factorielle() :
+    i = 0
+    fact = 1
+    a = int(input("Saisir une valeur pour a pour sa factorielle: "))
+    while i < a :
+        fact = fact * (i+1)
+        i = i+1
+        print(fact)
 
 #demande_nombre()
 #afficher_10_nombres()
 #multiplication()
-exercice_3()
+#exercice_3()
+factorielle()
