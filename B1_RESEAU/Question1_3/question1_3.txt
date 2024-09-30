@@ -7,7 +7,7 @@ EXERCIES RESEAU
 Question 1 :
  Trouver le masque de sous-réseau, l'adresse réseau, l'adresse de diffusion de chaque adresse IP ?
  
-192.168.1.10/24 -> 24 = masque sous réseau / 192.168.1 = adresse réseau / 192.168.255.255 = adresse de diffusion  / MAX STA : 2^(32-24)-2 / Première adresse : 192.168.1.1 / Dernière adresse : 192.168.1.254
+192.168.1.10/24 -> 24 = masque sous réseau / 192.168.1 = adresse réseau / 192.168.1.255 = adresse de diffusion  / MAX STA : 2^(32-24)-2 / Première adresse : 192.168.1.1 / Dernière adresse : 192.168.1.254
  
 192.168.245.250/8 -> 8 = masque sous réseau / 192 = adresse réseau / 192.255.255.255 = adresse de diffusion / MAX STA : 2^(32-8)-2 / Première adresse :  192.0.0.1 / Dernière adresse : 192.255.255.254
 
