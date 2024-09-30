@@ -13,7 +13,7 @@ Question 1 :
 
 10.0.0.25/16 -> 16 = masque sous réseau = 255.255.0.0 / 10.0.0.0 = adresse réseau / 10.0.255.255 = adresse de diffusion / MAX STA : 2^(32-16)-2 / Première adresse : 10.0.0.1 / Dernière adresse : 10.0.255.254
 
-172.31.120.10/20 -> 20 = masque sous réseau / 172.31.0111 0000.0 = 172.31.112.0 = adresse réseau / 172.31.127.255 = adresse de diffusion / MAX STA : 2^(32-20)-2 / Première adresse : 172.31.127.1     / Dernière adresse : 172.31.127.254
+172.31.120.10/20 -> 20 = masque sous réseau / 172.31.0111 0000.0 = 172.31.112.0 = adresse réseau / 172.31.127.255 = adresse de diffusion / MAX STA : 2^(32-20)-2 / Première adresse : 172.31.112.1     / Dernière adresse : 172.31.127.254
 
 10.0.0.25/25 -> 25 = masque sous réseau / 10.0.0.0 = adresse réseau / 10.0.7.127 = adresse de diffusion / MAX STA : 2^(32-25)-2 / Première adresse : 10.0.0.1  / Dernière adresse :10.0.7.126
 
