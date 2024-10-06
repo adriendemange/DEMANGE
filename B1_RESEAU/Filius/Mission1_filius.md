@@ -2,8 +2,9 @@ Adrien DEMANGE
 30-09-2024
 Mission 1 Réseau Filius 
 
-Etape 1 : Le masque de sous-réseau est 255.255.0.0 (CIDR=16)
-Le sous réseau de l'adresse IP est 198.168 (car 16 bits sont consacrés au réseau)
+Etape 1 : 
+1 - Le masque de sous-réseau est 255.255.0.0 (CIDR=16)
+2 - Le sous réseau de l'adresse IP est 198.168 (car 16 bits sont consacrés au réseau). Les machines sont donc connectées sur le même réseau.
 Il faut un équipement (type switch) pour que les machines puissent communiquer entre elles.
 Non car il n'y a pas d'équipement pour assurer la communication
 La commande "ipconfig" sur windows 
