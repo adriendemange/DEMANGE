@@ -2,7 +2,7 @@ Adrien DEMANGE
 30-09-2024
 Mission 1 Réseau Filius 
 
-<<<<<<< HEAD
+
 Etape 1 : Le masque de sous-réseau est 255.255.0.0 (CIDR=16)
 
 Le sous réseau de l'adresse IP est 198.168 (car 16 bits sont consacrés au réseau). Cela signifie que les machines sont reliés au même réseau.
@@ -14,7 +14,7 @@ Dans les conditions physiques présentées ci-dessus, les machines ne peuvent pa
 La commande "ipconfig" sur Windows permet d'afficher la configuration IP.
 
 La commande "ping" permet d'envoyer des "paquets" à une machine grâce à son adresse IP.
-=======
+
 Etape 1 : 
 1 - Le masque de sous-réseau est 255.255.0.0 (CIDR=16)
 2 - Le sous réseau de l'adresse IP est 198.168 (car 16 bits sont consacrés au réseau). Les machines sont donc connectées sur le même réseau.
@@ -22,7 +22,7 @@ Il faut un équipement (type switch) pour que les machines puissent communiquer 
 Non car il n'y a pas d'équipement pour assurer la communication
 La commande "ipconfig" sur windows 
 La commande ping permet d'envoyer des données à une machine grâce à l'adresse IP
->>>>>>> 068a73af9172b493f150e5679a7676bdde1edf5c
+
 
 Etape 2 :
 
