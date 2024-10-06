@@ -1,0 +1,5 @@
+Système : 20/09
+
+Un hyperviseur de type 1 est un système qui s’installe directement sur la couche matérielle du serveur. On parle d'hyperviseur natif.
+
+Un hyperviseur de type 2 est un logiciel qui s’installe et s’exécute sur un système d’exploitation déjà en place. On parle d'hyperviseur hébergé. Par exemple, une machine sous Windows 10 sur lequel on va venir installer un hyperviseur (comme n'importe quel autre logiciel) dans le but de créer des VMs.
