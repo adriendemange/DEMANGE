@@ -5,3 +5,6 @@ Veille Technologique
 Thème choisit : Sécurité informatique / IA 
 
 Outils : Google Alertes, 
+
+
+Article : ex -> titre source(lien) date résumé 
