@@ -7,4 +7,5 @@ Thème choisit : Sécurité informatique / IA
 Outils : Google Alertes, 
 
 
-Article : ex -> titre source(lien) date résumé 
+Article : (Date la plus récente en haut du fichier)
+ex -> titre source (lien) date résumé 
