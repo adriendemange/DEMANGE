@@ -4,7 +4,7 @@ Veille Technologique
 
 Thème choisit : Sécurité informatique / IA 
 
-Outils : Google Alertes, https://news.mit.edu/, https://www.enablesecurity.com/subscribe/, https://github.com/TalEliyahu/awesome-security-newsletters
+Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/subscribe/  https://github.com/TalEliyahu/awesome-security-newsletters
 
 
 Article : (Date la plus récente en haut du fichier)
