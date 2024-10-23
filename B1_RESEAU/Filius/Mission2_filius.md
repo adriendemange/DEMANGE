@@ -43,25 +43,26 @@ L'adresse de diffusion qui est : 10.0.255.255.
 
 Quel média d'interconnexion est nécessaire pour permettre à toutes les machines d'échanger des messages ?
 
-Un routeur permet de connecter des réseaux différents grâce à ses passerelles.
+Un routeur est nécessaire pour permettre aux machines de sous-réseaux différents de communiquer entre elles. Le switch permet les communications dans le même sous-réseau, mais un routeur est indispensable pour connecter plusieurs réseaux logiques.
 
 Etape 3 : 
 
 Ajouter un routeur à la configuration physique précedente.
 Expliquer brièvement le fonctionnement d’un routeur.
-Un routeur permet la connexion entre plusieurs réseaux. Par exemple pour accéder à Internet, le routeur permet de connecter un réseau local en le reliant à un réseau publique. Il utilise des passerelles pour identifier les machines du réseau privé.
+
+Un routeur est un équipement réseau qui permet de relier plusieurs réseaux différents entre eux. Il transmet les paquets de données entre les réseaux en utilisant des passerelles et des tables de routage pour déterminer le meilleur chemin pour chaque paquet.
 
 Compléter la configuration physique pour permettre aux différentes machines des différents réseaux logiques de communiquer.
 
 Combien d’interfaces réseaux sont nécessaires ?
-Il faut 2 ports pour connecter 2 switch au réseau.
+Il faut 2 ports pour connecter 2 switch au routeur.
 
 Quelle adresse IP aura chaque interface ?
-
+L'adresse IP de chaque interface est 192.168.0.10
 
 Est-ce que toutes les machines peuvent maintenant communiquer entre elles ? Justifier.
-
+Non il reste à configurer le routeur.
 
 Quelle nouvelle configuration est nécessaire pour permettre aux machines de communiquer avec des machines appartenant à d’autres réseaux (M5 avec M6 par exemple)?
- 
+Il faut configurer le routage sur le routeur pour permettre la communication entre les sous-réseaux. Chaque machine doit également avoir une passerelle par défaut pointant vers l'interface du routeur qui dessert son réseau. 
 
