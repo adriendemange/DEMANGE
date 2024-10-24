@@ -57,13 +57,13 @@ Un routeur est un équipement réseau qui permet de relier plusieurs réseaux di
 Compléter la configuration physique pour permettre aux différentes machines des différents réseaux logiques de communiquer.
 
 Combien d’interfaces réseaux sont nécessaires ?
-Il faut 2 ports pour connecter 2 switch au routeur.
+Il faut 2 ports pour connecter 2 switchs au routeur.
 
 Quelle adresse IP aura chaque interface ?
-L'adresse IP de chaque interface est 192.168.0.10
+L'adresse IP pour le réseau 1 est 10.10.0.1/16. L'adresse IP pour le réseau 2 est 10.0.0.1/16.
 
 Est-ce que toutes les machines peuvent maintenant communiquer entre elles ? Justifier.
-Non il reste à configurer le routeur.
+Non il reste à configurer les passerelles et à regrouper les machines avec les mêmes sou-réseaux pour le même switch (voir capture 03).
 
 Quelle nouvelle configuration est nécessaire pour permettre aux machines de communiquer avec des machines appartenant à d’autres réseaux (M5 avec M6 par exemple)?
 Il faut configurer le routage sur le routeur pour permettre la communication entre les sous-réseaux. Chaque machine doit également avoir une passerelle par défaut pointant vers l'interface du routeur qui dessert son réseau. 
