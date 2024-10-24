@@ -1,3 +1,5 @@
+Adrien DEMANGE
+17 / 10 / 2024
 FILIUS MISSION 2 : 
 
 On s'intéressera aux 4 machines suivantes : M1,M2,M3 et M4
