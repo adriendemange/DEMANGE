@@ -2,7 +2,7 @@ Adrien DEMANGE
 14/10/2024
 Veille Technologique 
 
-Thème choisit : Sécurité informatique / IA 
+Thème choisit : Cybersécurité : nouvelles techniques de hacking et nouveaux dispositifs pour renforcer les systèmes informatiques
 
 Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/subscribe/  https://github.com/TalEliyahu/awesome-security-newsletters
 
