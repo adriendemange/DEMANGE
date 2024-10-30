@@ -56,11 +56,16 @@ def calculprix() :
             print("Malheureusement vous n'avez pas le droit à une remise ou la saisie est incorrecte...\n")
 
         password=input("Faites-vous parti du groupe ?Si non, tapez N. \n Si oui veuillez saisir votre mot de passe :\n" )
-        if password=="Padawan" :
-            print("Bravo vous êtes rentrés dans l'application !\n")
-           
-        else :
-            print("Dommage vous ne faîtes pas parti du groupe... Bonne continuation !\n")
+        i = 0
+        while password != "Padawan" and i < 2:
+            password = input("Le MDP est incorrect, veuillez saisir votre mot de passe à nouveau :\n")
+            i += 1
+
+        if password == "Padawan":
+            print("Bienvenue dans le groupe !")
+        else:
+             print("Vous avez effectué trop de tentatives... Bonne continuation !\n")
+
 
 nbproduit=input("Saisir le n nombre de produits à traiter ou Non si vous n'avez qu'un seul produit :  N produit / Non")
 if nbproduit == 'N' : 
@@ -69,7 +74,7 @@ else :
     nbproduit = int(nbproduit)
     for i in range(nbproduit):
         calculprix()
-    print("Vos 'nbproduit' recherches ont été effectuées !" nbproduit = +str(nbproduit))
+    print("Vos 'nbproduit' recherches ont été effectuées ! nbproduit =" +str(nbproduit))
     exit (1)
    
 calculprix()
