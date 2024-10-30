@@ -30,7 +30,7 @@ def calculprix() :
                     ttc=prixht*(0.2+1)*qte          #TVA de base à 0.2 pour le prix < 20 0000
                     ttc=ttc -(ttc*(30/100))
                     print("Voici le TTC avec TVA à 0.2 pourcent et la remise de 30 pourcent pour la carte gold:\n", ttc)    
-                else :
+                if carte==1 :
                     print("Bravo vous avez le droit à une remise de 10 pourcent car votre prix est supérieur à 20 000.\n")
                     ttc=prixht*(0.05+1)*qte
                     ttc=ttc -(ttc*(10/100))
@@ -48,7 +48,7 @@ def calculprix() :
                     ttc=prixht*(0.2+1)*qte          #TVA de base à 0.2 pour le prix < 20 0000
                     ttc=ttc -(ttc*(20/100))
                     print("Voici le TTC avec TVA à 0.2 pourcent et la remise de 20 pourcent pour la carte gold et le véhicule non électrique:\n", ttc)
-                else :
+                if carte==1 :
                     ttc=prixht*(0.2+1)*qte
                     ttc=ttc -(ttc*(10/100))
                     print("Voici le TTC avec TVA à 20 pourcent car votre véhicule n'est pas électrique:\n", ttc)
@@ -58,11 +58,20 @@ def calculprix() :
         password=input("Faites-vous parti du groupe ?Si non, tapez N. \n Si oui veuillez saisir votre mot de passe :\n" )
         if password=="Padawan" :
             print("Bravo vous êtes rentrés dans l'application !\n")
-            exit
+           
         else :
             print("Dommage vous ne faîtes pas parti du groupe... Bonne continuation !\n")
-            exit
 
+nbproduit=input("Saisir le n nombre de produits à traiter ou Non si vous n'avez qu'un seul produit :  N produit / Non")
+if nbproduit == 'N' : 
+    print("Très bien, lancement de la fonction !")
+else : 
+    nbproduit = int(nbproduit)
+    for i in range(nbproduit):
+        calculprix()
+    print("Vos 'nbproduit' recherches ont été effectuées !" nbproduit = +str(nbproduit))
+    exit (1)
+   
 calculprix()
 condi=input("Voulez-vous effectuer un nouveau calcul ? O/N\n")
 while condi=="O" :
