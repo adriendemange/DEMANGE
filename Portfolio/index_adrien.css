@@ -268,3 +268,26 @@ nav a:hover {
     font-size: 0.9rem;
     display: none;
 }
+
+.description_veille {
+    position: absolute;
+    top: 160px; /* Ajuste la position en fonction de l'image */
+    left: 10px; /* Même alignement horizontal que l'image */
+    font-size: 20px;
+    color: #ffff00;
+    opacity: 0; /* Initialement invisible */
+    animation: fadeInText 3s ease-in-out forwards; /* Animation */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.description_veille_2 {
+    position: absolute;
+    top: 220px; /* Ajuste la position en fonction de l'image */
+    left: 10px; /* Même alignement horizontal que l'image */
+    font-size: 20px;
+    color: #000000;
+    opacity: 0; /* Initialement invisible */
+    animation: fadeInText 3s ease-in-out forwards; /* Animation */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
