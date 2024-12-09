@@ -218,7 +218,7 @@ nav a:hover {
 }
 .social-link a {
     text-decoration: none;
-    color: #333;
+    color: #ff0000;
     font-size: 0.9rem;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -290,4 +290,38 @@ nav a:hover {
     animation: fadeInText 3s ease-in-out forwards; /* Animation */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.description_projet_1{
+    position: absolute; /* Permet de placer l'image où tu veux sur la page */
+    top: 107px;   /* Distance par rapport au haut de la page */
+    left: 800px;  /* Distance par rapport à la gauche de la page */
+    width: 390px; /* Taille de l'image */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 3s ease-in-out forwards;
+}
+.description_projet_1_p {
+    position: absolute; /* Permet de placer l'image où tu veux sur la page */
+    top: 650px;   /* Distance par rapport au haut de la page */
+    left: 800px;  /* Distance par rapport à la gauche de la page */
+    width: 390px; /* Taille de l'image */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 3s ease-in-out forwards;
+    color: #ba0cff;
+}
+.positionned-image-osint {
+    position: absolute; /* Permet de placer l'image où tu veux sur la page */
+    top: 200px;   /* Distance par rapport au haut de la page */
+    left: 800px;  /* Distance par rapport à la gauche de la page */
+    width: 490px; /* Taille de l'image */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease-in-out forwards;
+}
 
+p {
+    color: #000000;
+}
+.blue {
+    color: #2196f3;
+}
