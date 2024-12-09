@@ -11,7 +11,7 @@ public class Mission1 {
         int n = sc.nextInt();
         sc.nextLine();
         for(int i=0; i<n; i++) {
-            Produit();
+            produit();
             System.out.println("Pour être sûr voulez-vous continuer vers un nouveau produit ? Y/N \n");
             String condition = sc.nextLine();
             if (condition.equals("Y")) {
@@ -22,9 +22,40 @@ public class Mission1 {
                 System.exit(1);
             }
         }
+        String[] nom;
+
+        nom = new String[5];
+        int[] prixHT;
+
+        prixHT = new int[5];
+        nom[0] = "Moto Kawa-5";
+        nom[1] = "Jeep 50";
+        nom[2] = "Toyota Yaris";
+        nom[3] = "Citroen C4";
+        nom[4] = "Porsche GT3 RS";
+        for(String v: nom) {
+            System.out.println(v);
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Saisir le prix pour l'objet suivant :" + nom[i] + "\n");
+            prixHT[i] = sc.nextInt();
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Produit " + nom[i] + "=" + prixHT[i] + "€\n");
+
+        }
+        System.out.println("Faîtes maintenant votre panier : \n");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("\nSaisir le nom du produit et son prix \n");
+            nom[i] = sc.nextLine();
+            prixHT[i] = sc.nextInt();
+
+        }
+
     }
-    private static void Produit() {
+    private static void produit() {
         Scanner sc = new Scanner(System.in);
+        double tva = 0;
         System.out.println("Saisir le mot de passe pour accéder à l'application \n");
         String passwd = sc.nextLine();
         int i = 0;
@@ -77,15 +108,13 @@ public class Mission1 {
         System.out.println("Saisir si la voiture est électrique : Y/N \n");
         String rep = sc.nextLine();
         if (rep.equals("N")) {
-            double tva = 0.2;
-            double prix_ttc = prix_ht * (tva + 1) ;
-            System.out.println("Voici le prix TTC :" + prix_ttc + "\n");
+            tva = 0.2;
         }
-        else{
-            double tva = 0.05;
-            double prix_ttc = prix_ht * (tva + 1) ;
-            System.out.println("Voici le prix TTC :" + prix_ttc + "\n");
+        if (rep.equals("N")){
+            tva = 0.05;
         }
+        double prix_ttc = prix_ht * (tva + 1) ;
+        System.out.println("Voici le prix TTC :" + prix_ttc + "\n");
         System.out.println("Fin du programme \n");
     }
 }
