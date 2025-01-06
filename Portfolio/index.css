@@ -457,3 +457,41 @@ input[type="radio"]:checked + .project-details {
 .error {
     color: #f44336;
 }
+
+/* Styles pour la section TryHackMe */
+.tryhackme-section {
+    margin: 20px;
+    max-width: 400px;
+    text-align: left;
+    float: left;
+}
+
+.tryhackme-info {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(246, 77, 77, 0.9);
+    border-radius: 5px;
+    color: #000000;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tryhackme-badge {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.tryhackme-badge iframe {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.tryhackme-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #ffff00;
+}
