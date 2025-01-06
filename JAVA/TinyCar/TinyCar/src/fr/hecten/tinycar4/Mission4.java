@@ -16,7 +16,7 @@ public class Mission4 {
             n = sc.nextInt();
         }
         //question1_2 //question 1 et 2 FONCTIONNEL
-        question3_4(n); //FONCTIONNEL questions 3 et 4 
+        question3_4(n); //FONCTIONNEL questions 3 et 4
 
 
     }
@@ -57,24 +57,28 @@ public class Mission4 {
             sc.nextLine(); // Consomme le retour à la ligne
         }
         int prix_total_panier = 0;
-        int prix_mini = 0;
-        int prix_max = 0;
+        int prix_mini = prixHT[0];
+        int prix_max = prixHT[0];
+        String produit_max = nom[0];
+        String produit_min = nom[0];
         double moyenne = 0;
         for (int i = 0; i < n; i++) {  //Affichage Tableau
             System.out.println("Produit " + nom[i] + "=" + prixHT[i] + "€\n");
             prix_total_panier += prixHT[i];
             moyenne = moyenne + prixHT[i];
-            if (prixHT[i] < prix_mini) {
+            if (prixHT[i] <= prix_mini) {
                 prix_mini = prixHT[i];
+                produit_min = nom[i];
             }
-            if (prixHT[i] > prix_max) {
+            if (prixHT[i] >= prix_max) {
                 prix_max = prixHT[i];
+                produit_max = nom[i];
             }
         }
         moyenne = moyenne / n;
-        System.out.println("\nSomme totale du panier : " + prix_total_panier + "\n");
-        System.out.println("\nMoyenne totale du panier : " + moyenne + "\n");
-        System.out.println("\nPrix Max du panier : " + prix_max + "\n");
-        System.out.println("\nPrix minimum du panier : " + prix_mini + "\n");
+        System.out.println("\nSomme totale du panier : " + prix_total_panier);
+        System.out.println("\nMoyenne totale du panier : " + moyenne);
+        System.out.println("\nPrix Max du panier et nom du produit: " + prix_max + "/" + produit_max);
+        System.out.println("\nPrix minimum du panier et nom du produit: " + prix_mini + "/" + produit_min + "\n");
     }
 }
