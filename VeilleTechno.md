@@ -10,6 +10,17 @@ Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/su
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
+
+
+IT Connect https://www.it-connect.fr/une-nouvelle-vague-extensions-malveillantes-cible-les-developpeurs-visual-studio-code/   -> Une nouvelle vague d’extensions malveillantes cible les développeurs sous Visual Studio Code ! / 19/12/2024 Florian BURNEL Cybersécurité
+
+IT Connect https://www.it-connect.fr/extensions-chrome-infectees-code-malveillant-a-voler-les-donnees-des-utilisateurs/
+L'extension Chrome de Cyberhaven infectée par du code malveillant
+Un pirate informatique est parvenu à accéder au compte administrateur Google Chrome Web Store d'un employé de chez Cyberhaven, une entreprise spécialisée dans la prévention contre les pertes de données. Parmi ses clients, Cyberhaven compte notamment de grandes entreprises comme Snowflake, Motorola, Canon, Reddit, AmeriHealth, Cooley, IVP, Navan, DBS, Upstart et Kirkland & Ellis.
+Des extensions Chrome infectées par un code malveillant destiné à voler les données des utilisateurs
+31/12/2024 Florian BURNEL Cybersécurité
+
+
 https://news.mit.edu/2024/bubble-findings-could-unlock-better-electrode-electrolyzer-designs-1008 -> Une nouvelle étude des bulles sur les surfaces des électrodes pourrait aider à améliorer l’efficacité des processus électrochimiques qui produisent des carburants, des produits chimiques et des matériaux.
 David L. Chandler | MIT News
 Publication Date:October 8, 2024  
