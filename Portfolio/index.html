@@ -32,50 +32,73 @@
         </ul>
         <img src="Img/hunterxhunter_image.avif" alt="Image Précise" class="positionned-image" style="border-radius: 10px;">
         <p class="description">Voici Hunter x Hunter, l'une des mes oeuvres favorites ! C'est un manga écrit par Yoshihiro Togashi en 1998, adapté en animé en 1999 puis 2011.</p>
-        <h2 class="fade-in-text">Mes Compétences</h1>
+        <div class="skills-section">
+            <h2 class="fade-in-text">Mes Compétences</h2>
             <div class="skill-bar">
-                <p class="skill-title">Réseau & Système </p>
+                <p class="skill-title">Réseau & Système</p>
                 <div class="bar-container">
                     <div class="bar" style="--width: 40%;"></div>
                 </div>
             </div>
-    <div class="skill-bar">
-        <p class="skill-title">Windows</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 40%;"></div>
+            <div class="skill-bar">
+                <p class="skill-title">Windows</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p class="skill-title">Linux</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p class="skill-title">Kali Linux - Test de Pénétration</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p class="skill-title">Active Directory</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p class="skill-title">HTML / PHP / Python</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 35%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p class="skill-title">C</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 65%;"></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="skill-bar">
-        <p class="skill-title">Linux</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 50%;"></div>
+        <div class="video-section">
+            <h2 class="fade-in-text" style="color: yellow;">Découvrez mon école</h2>
+            <div class="video-container">
+                <div class="video-thumbnail" id="videoThumbnail">
+                    <img src="https://customer-m0aw7w1jgycimbke.cloudflarestream.com/4df5671430d8e3b4d0537fc9fa904e31/thumbnails/thumbnail.jpg" alt="Aperçu de la vidéo">
+                    <div class="play-button">▶</div>
+                </div>
+                <iframe id="videoFrame" 
+                        style="display: none;"
+                        src="https://customer-m0aw7w1jgycimbke.cloudflarestream.com/4df5671430d8e3b4d0537fc9fa904e31/iframe"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
-    </div>
-    <div class="skill-bar">
-        <p class="skill-title">Kali Linux - Test de Pénétration</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 40%;"></div>
-        </div>
-    </div>
-    <div class="skill-bar">
-        <p class="skill-title">Active Directory</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 50%;"></div>
-        </div>
-    </div>
-    <div class="skill-bar">
-        <p class="skill-title">HTML / PHP / Python</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 35%;"></div>
-        </div>
-    </div>
-    <div class="skill-bar">
-        <p class="skill-title">C</p>
-        <div class="bar-container">
-            <div class="bar" style="--width: 65%;"></div>
-        </div>
-    </div>
-   
+        
+        <script>
+        document.getElementById('videoThumbnail').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('videoFrame').style.display = 'block';
+        });
+        </script>
     </body>
   
 </html>
