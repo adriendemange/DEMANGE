@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Page index de Adrien</title>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="index.php">Accueil</a></li>
+            <a href="projets.php">Projets BTS</a></li>
+            <a href="entreprise.php">Entreprise</a></li>
+            <a href="veille.php">Veille Technologique</a></li>
+            <a href="a_propos_de_moi.php">À propos de moi</a></li>
+        </div> 
+
+        <a href="https://hecten.fr/">
+            <img src="Img/hecten_image.png" width="180" alt="HECTEN" class="hecten-logo" style="border-radius: 5px;" >
+        </a>
+        
+        <h1 class="fade-in-text">Mon PortFolio</h1>
+        <h2 class="fade-in-text">Je m'appelle Adrien, j'ai 20 ans et je suis actuellement élève chez HECTEN pour ma première année de BTS SIO Option SISR.</h2>
+        
+        <h2 class="fade-in-text" style="color: yellow;">Voici mon parcours scolaire </h2>
+        <ul class="fade-in-text">
+            <li>Alternant chez ACI Technology depuis septembre 2024 <a href="https://acitechnology.eu/" class="aci-link">
+                <img src="Img/aci_image.png" width="80" alt="ACI Technology"></a></li>
+            <li>Étudiant chez HECTEN à Paris depuis septembre 2024</li>
+            <li>Étudiant chez CY Tech  de 2022 à 2023</li>
+            <li>Bac Général Maths-Physique au lycée Jean-Perrin en 2021</li>
+        </ul>
+
+        <img src="Img/hunterxhunter_image.avif" alt="Image Précise" class="positionned-image" style="border-radius: 10px;">
+        <p class="description">Voici Hunter x Hunter, l'une des mes oeuvres favorites ! C'est un manga écrit par Yoshihiro Togashi en 1998, adapté en animé en 1999 puis 2011.</p>
+        <div class="skills-section">
+            <h2 class="fade-in-text" style="color: yellow;">Mes Compétences</h2>
+
+            <div class="skill-bar">
+                <p class="skill-title">Réseau & Système</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 40%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">Windows</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 40%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">Linux</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">Kali Linux - Test de Pénétration</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 40%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">Active Directory</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">HTML / PHP / Python</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 35%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p class="skill-title">C</p>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2 class="fade-in-text" style="color: yellow;">Découvrez mon école</h2>
+            <div class="video-container">
+                <div class="video-thumbnail" id="videoThumbnail">
+                    <img src="https://customer-m0aw7w1jgycimbke.cloudflarestream.com/4df5671430d8e3b4d0537fc9fa904e31/thumbnails/thumbnail.jpg" alt="Aperçu de la vidéo">
+                    <div class="play-button">▶</div>
+                </div>
+                <iframe id="videoFrame" 
+                        style="display: none;"
+                        src="https://customer-m0aw7w1jgycimbke.cloudflarestream.com/4df5671430d8e3b4d0537fc9fa904e31/iframe"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+        <script>
+        document.getElementById('videoThumbnail').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('videoFrame').style.display = 'block';
+        });
+        </script>
+    </body>
+</html>
