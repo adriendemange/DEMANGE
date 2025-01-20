@@ -2,7 +2,8 @@
 #20/01/2025
 #Mission AlwaysData
 AlwaysData : 
-![image](https://github.com/user-attachments/assets/927075e9-717b-450a-9aa3-734830312249)
+![image](https://github.com/user-attachments/assets/d04e1659-43af-4583-b2cc-c54bd84b973f)
+
 
 Alwaysdata propose des services d'hébergement web, de gestion de bases de données, d'enregistrement de noms de domaine et de messagerie, ainsi que des outils de développement et de sécurité. Leur offre est adaptée aux besoins des développeurs et des entreprises, avec une grande flexibilité et un support technique dédié.
 
