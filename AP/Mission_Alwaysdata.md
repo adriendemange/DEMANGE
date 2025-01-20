@@ -68,6 +68,7 @@ https://adriendem.alwaysdata.net/PortFolio/
 
 Etape 3 - Gestion des accès à un dossier privé sur un serveur web
 Chercher une solution simple pour bloquer l'accès au dossier de votre portefolio le temps de le finir (accès via un secret) Expliciter la mise en oeuvre de la méthode et partager le secret (pour le prof ;-)).
+Il faut créer un fichiere .htacess ainsi qu'un fichier .htpasswd à placer dans le répertoire sur le serveur.
 
 Etape 4 - Gestion de paires de clés privée et publique
 On souhaiterait se connecter avec une paire de clés privée/public au service SSH accessible sur AlwaysData.
