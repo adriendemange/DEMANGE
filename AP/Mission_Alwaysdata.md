@@ -1,6 +1,8 @@
-#Adrien DEMANGE
-#20/01/2025
-#Mission AlwaysData
+Adrien DEMANGE
+20/01/2025
+Mission AlwaysData
+
+
 AlwaysData : 
 ![image](https://github.com/user-attachments/assets/d04e1659-43af-4583-b2cc-c54bd84b973f)
 
