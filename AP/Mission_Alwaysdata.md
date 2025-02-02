@@ -73,6 +73,9 @@ Il faut créer un fichiere .htacess ainsi qu'un fichier .htpasswd à placer dans
 Etape 4 - Gestion de paires de clés privée et publique
 On souhaiterait se connecter avec une paire de clés privée/public au service SSH accessible sur AlwaysData.
 
+Commande pour générer une clé SSH : ssh-copy-id -i ~/.ssh/id_rsa.pub <username>@<ipaddress>
+
+
 Voici des liens pour vous y aider :
 
 https://www.remipoignon.fr/authentification-ssh-par-cle-privee/
