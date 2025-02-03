@@ -15,7 +15,7 @@ IT Connect : DeepSeek : une base de données non protégée expose les conversat
 IT Connect :Microsoft Teams : tous les utilisateurs vont bénéficier d’une nouvelle protection contre le phishing !   -   https://www.it-connect.fr/microsoft-teams-tous-les-utilisateurs-vont-beneficier-dune-nouvelle-protection-contre-le-phishing/
 
 
-MIT : Un nouveau protocole de sécurité protège les données des attaquants lors des calculs basés sur le cloud / https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926
+MIT : Un nouveau protocole de sécurité protège les données des attaquants lors des calculs basés sur le cloud / https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926   :  Des chercheurs du MIT ont développé un protocole de sécurité exploitant les propriétés quantiques de la lumière pour protéger les données dans l’apprentissage profond sur le cloud. En encodant les données et les poids du modèle dans un champ optique via la lumière laser, ce protocole empêche toute copie ou interception sans détection, grâce au principe de non-clonage quantique. Il garantit ainsi la confidentialité des données du client et la protection du modèle du serveur, tout en maintenant une précision de 96 %. Cette approche pourrait être appliquée à l’apprentissage fédéré et aux opérations quantiques pour renforcer encore la sécurité et la performance.
 
 
 IT Connect https://www.it-connect.fr/une-nouvelle-vague-extensions-malveillantes-cible-les-developpeurs-visual-studio-code/   -> Une nouvelle vague d’extensions malveillantes cible les développeurs sous Visual Studio Code ! / 19/12/2024 Florian BURNEL Cybersécurité
