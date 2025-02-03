@@ -83,7 +83,9 @@ https://www.remipoignon.fr/authentification-ssh-par-cle-privee/
 Expliciter dans vos mots ce principe d'authentification
 
 Notez les avantages à se connecter avec une paire de clé privée et publique vs se connecter avec mot de passe
+Il n'y a pas besoin de re-saisir le mdp à chaque connexion, on peut configurer une phrase si besoin à rentrer 
 
 Noter les étapes nécessaires pour y parvenir
-
+Il faut générer une clé publique et une clé privée depuis notre machine. Il faut ensuite envoyer la clé publique sur le serveur hébergant le site, et stocker notre clé privé dans notre dossier .ssh
+Il faut ensuite configurer le serveur AlwaysData pour qu'il accepte les clés SSH en connexion.
 Notez les étapes pour en tester le bon fonctionnement
