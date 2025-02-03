@@ -25,42 +25,15 @@
             <li>Sens de l'organisation</li>
             <li>Rigueur</li>
         </ul>
-        <p class="fade-in-text">Ces qualités et bien d'autres sont dévéloppées au fur et à mesure de l'année scolaire afin de nous perfectionner.</p>
-        <p class="fade-in-text">Je suis actuellement chez <b>ACI Technology</b> pour une durée de 24 mois (2024 à 2026)</p>
-        <p class="fade-in-text">Je suis Technicien Systèmes & Réseaux.  </p>
+        <p class="fade-in-text" style="color: yellow;">Ces qualités et bien d'autres sont dévéloppées au fur et à mesure de l'année scolaire afin de nous perfectionner.</p>
+        <p class="fade-in-text" style="color: yellow;">Je suis actuellement chez <b>ACI Technology</b> pour une durée de 24 mois (2024 à 2026)</p>
+        <p class="fade-in-text" style="color: yellow;">Je suis Technicien Systèmes & Réseaux.  </p>
         <a href="https://acitechnology.eu/" class="aci-link"> <img src="Img/aci_image.png" width="90" alt="ACI Technology" style="position: relative; left:0px; top: -540px;" class="hecten-logo"></a>
         <img src="Img/aci_image_1.png" width="400" alt="ACI Technology" style="position: relative; left: 800px; top: -400px; border-radius: 25px;" class="hecten-logo">
         
-        <div class="skills-description">
-            <h2 class="fade-in-text">Mes Compétences en Entreprise</h2>
-            
-            <div class="skill-detail">
-                <h3>Administration des Services Cloud</h3>
-                <p>Dans le cadre de mes missions, je gère quotidiennement :</p>
-                <ul>
-                    <li>La console d'administration Microsoft 365 pour la gestion des utilisateurs, des licences et des services cloud Microsoft</li>
-                    <li>Google Workspace pour l'administration des services Google en entreprise</li>
-                </ul>
-            </div>
+        
 
-            <div class="skill-detail">
-                <h3>Gestion des Infrastructures</h3>
-                <p>Je travaille régulièrement sur :</p>
-                <ul>
-                    <li>L'Active Directory (AD) pour la gestion centralisée des utilisateurs et des ressources réseau</li>
-                    <li>L'utilisation de Datto pour la prise en main à distance des postes clients et serveurs, permettant une assistance technique rapide et efficace</li>
-                </ul>
-            </div>
-
-            <div class="skill-detail">
-                <h3>Support Technique</h3>
-                <p>Mon rôle comprend également :</p>
-                <ul>
-                    <li>L'assistance aux utilisateurs sur leurs problématiques quotidiennes</li>
-                    <li>La maintenance préventive et corrective des systèmes</li>
-                    <li>La documentation des interventions et des procédures</li>
-                </ul>
-            </div>
-        </div>
+           
+     
     </body>
 </html>

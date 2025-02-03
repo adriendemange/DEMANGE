@@ -37,76 +37,18 @@
         
         <a href="https://github.com/adriendemange/DEMANGE/tree/main/CYBERSECURITE_FANGNON" >
             <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint" style="border-radius: 10px;">
-        </a>
-
-       
-
-    
-        <script>
-            function showProjectDetails(projectId) {
-                const modal = document.getElementById('projectModal');
-                const content = document.getElementById('modalContent');
-                
-                let projectContent = '';
-                switch(projectId) {
-                    case 1:
-                        projectContent = `
-                            <h2>Projet Infrastructure Réseau</h2>
-                            <p>Description détaillée du projet d'infrastructure...</p>
-                            <h3>Technologies utilisées:</h3>
-                            <ul>
-                                <li>Windows Server 2019</li>
-                                <li>Active Directory</li>
-                                <li>Configuration VLAN</li>
-                            </ul>
-                        `;
-                        break;
-                    case 2:
-                        projectContent = `
-                            <h2>Projet Supervision</h2>
-                            <p>Description détaillée du projet de supervision...</p>
-                            <h3>Technologies utilisées:</h3>
-                            <ul>
-                                <li>Nagios Core</li>
-                                <li>Scripts Shell</li>
-                                <li>Ubuntu Server</li>
-                            </ul>
-                        `;
-                        break;
-                    case 3:
-                        projectContent = `
-                            <h2>Projet Sécurité</h2>
-                            <p>Description détaillée du projet de sécurité...</p>
-                            <h3>Technologies utilisées:</h3>
-                            <ul>
-                                <li>Kali Linux</li>
-                                <li>Outils d'audit</li>
-                                <li>Solutions de sécurité</li>
-                            </ul>
-                        `;
-                        break;
-                }
-                
-                content.innerHTML = projectContent;
-                modal.style.display = 'block';
-            }
-
-            function closeProjectDetails() {
-                document.getElementById('projectModal').style.display = 'none';
-            }
-        </script>
-    
+        </a>    
         <div style="display: flex; gap: 20px; align-items: flex-start;">
             <div style="flex: 0 0 300px;">
                 <h3 style="color: yellow;">Fonctionnement du Terminal</h3>
                 <p style="color: white;">
-                    Ce terminal interactif permet de tester un programme Java qui :
-                    <ul style="color: white;">
+                    Ce terminal interactif permet de tester un programme Java qui permet de vérifier si l'utilisateur est majeur ou non.
+                    <ul>
                         <li>Demande votre prénom</li>
                         <li>Vérifie votre âge</li>
                         <li>Confirme votre majorité</li>
                     </ul>
-                    Cliquez sur "Exécuter" pour tester le programme !
+                    Appuyez sur votre touche "entrée" pour tester le programme !
                 </p>
             </div>
             
@@ -365,7 +307,7 @@ public class Hello2 {
             <div class="project-card">
                 <h3>Filius/Cisco Packet Tracer</h3>
                 <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/Filius" target="_blank">Voir le projet</a>
+                <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" target="_blank">Voir le projet</a>
             </div>
             <div class="project-card">
                 <h3>ZooTickoon</h3>
@@ -383,9 +325,15 @@ public class Hello2 {
                 <a href="https://github.com/adriendemange/DEMANGE/tree/main/SYSTEME_T" target="_blank">Voir le projet</a>
             </div>
             <div class="project-card">
-                <h3>PortFolio et publication avec AlwaysData</h3>
+                <h3>Code source du PortFolio </h3>
                 <p>Programmation en HTML / CSS de ce PortFolio puis mise en ligne avec AlwaysData.</p>
                 <a href="https://github.com/adriendemange/DEMANGE/tree/main/Portfolio" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <h3>Publication du PortFolio avec AlwaysData</h3>
+                <p>Configuration d'un serveur afin d'héberger notre site Web.</p>
+                <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" target="_blank">Voir le projet</a>
+                
             </div>
         </div>
     </body>

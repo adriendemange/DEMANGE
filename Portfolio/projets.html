@@ -33,38 +33,65 @@
             <p class="blue"> Utilisation de <b>SpiderFoot</b>, <b>WhoIs</b>, <b>Shodan</b>, <b>TheHarvester</b> </p>
         </div>
         <a href="https://github.com/adriendemange/DEMANGE/tree/main/CYBERSECURITE_FANGNON" >
-            <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint "  style="border-radius: 10px;">
+            <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint" style="border-radius: 10px;">
         </a>
-        <div class="projects-container">
-            <label class="project-card">
-                <input type="radio" name="project" id="project1">
-                <h3>Projet 1</h3>
-                <p>Description rapide...</p>
-            </label>
-            <label class="project-card">
-                <input type="radio" name="project" id="project2">
-                <h3>Projet 2</h3>
-                <p>Description rapide...</p>
-            </label>
-            <label class="project-card">
-                <input type="radio" name="project" id="project3">
-                <h3>Projet 3</h3>
-                <p>Description rapide...</p>
-            </label>
-        </div>
-        
-        <div class="project-details" id="details1">
-            <h2>Détails du Projet 1</h2>
-            <p>Voici le contenu complet du Projet 1...</p>
-        </div>
-        <div class="project-details" id="details2">
-            <h2>Détails du Projet 2</h2>
-            <p>Voici le contenu complet du Projet 2...</p>
-        </div>
-        <div class="project-details" id="details3">
-            <h2>Détails du Projet 3</h2>
-            <p>Voici le contenu complet du Projet 3...</p>
-        </div>
+
+       
+
+    
+        <script>
+            function showProjectDetails(projectId) {
+                const modal = document.getElementById('projectModal');
+                const content = document.getElementById('modalContent');
+                
+                let projectContent = '';
+                switch(projectId) {
+                    case 1:
+                        projectContent = `
+                            <h2>Projet Infrastructure Réseau</h2>
+                            <p>Description détaillée du projet d'infrastructure...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Windows Server 2019</li>
+                                <li>Active Directory</li>
+                                <li>Configuration VLAN</li>
+                            </ul>
+                        `;
+                        break;
+                    case 2:
+                        projectContent = `
+                            <h2>Projet Supervision</h2>
+                            <p>Description détaillée du projet de supervision...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Nagios Core</li>
+                                <li>Scripts Shell</li>
+                                <li>Ubuntu Server</li>
+                            </ul>
+                        `;
+                        break;
+                    case 3:
+                        projectContent = `
+                            <h2>Projet Sécurité</h2>
+                            <p>Description détaillée du projet de sécurité...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Kali Linux</li>
+                                <li>Outils d'audit</li>
+                                <li>Solutions de sécurité</li>
+                            </ul>
+                        `;
+                        break;
+                }
+                
+                content.innerHTML = projectContent;
+                modal.style.display = 'block';
+            }
+
+            function closeProjectDetails() {
+                document.getElementById('projectModal').style.display = 'none';
+            }
+        </script>
     
         <div class="terminal-container">
             <div class="controls">

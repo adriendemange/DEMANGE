@@ -1,0 +1,31 @@
+PROJET SISR :
+
+VM Linux Debian v11
+
+Installation serveur Samba 
+
+
+Analyse du prblm : 15 Employés -> De TechSolutions -> Prblm de sécurité avec l'USB 
+
+3 Services existants : Administratif / Technique / Commercial
+
+Chaque service -> Son dossier de partage 
+
+Un dossier publique 
+
+Droits d'accès -> Par groupe -> Administratif, Publique, technique, commercial 
+
+Chaque User -> compte perso 
+
+Sécurité : Authentification (mdp, clé etc.)
+	Suivi de journaux dispo 
+	Pare-feu -> Réseau local 
+
+Sauvegarde Hebdomadaire automatique des fichiers partagés 
+
+
+Exemple Type : /partages/administratif
+		/partages/public
+		/partages/commercial
+		/partages/technique
+
