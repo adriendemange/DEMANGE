@@ -95,4 +95,8 @@ Notez les étapes pour en tester le bon fonctionnement
 ![image](https://github.com/user-attachments/assets/9ff0f3a6-7b8e-48b6-aa31-1e0cc78690a0)
 
 
+![image](https://github.com/user-attachments/assets/bcea4a2d-def2-47cc-a61f-33dd3c000f1e)
+
+Nous n'avons pas les droits avec AlwaysData pour modifier directement dans le dossier ~/ssh/sshd_config/ afin de désactiver l'authentification par mdp 
+
 
