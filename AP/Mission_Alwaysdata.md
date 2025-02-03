@@ -73,6 +73,9 @@ Il faut créer un fichiere .htacess ainsi qu'un fichier .htpasswd à placer dans
 Etape 4 - Gestion de paires de clés privée et publique
 On souhaiterait se connecter avec une paire de clés privée/public au service SSH accessible sur AlwaysData.
 
+Commande pour générer une clé SSH : ssh-copy-id -i ~/.ssh/id_rsa.pub <username>@<ipaddress>
+
+
 Voici des liens pour vous y aider :
 
 https://www.remipoignon.fr/authentification-ssh-par-cle-privee/
@@ -80,7 +83,20 @@ https://www.remipoignon.fr/authentification-ssh-par-cle-privee/
 Expliciter dans vos mots ce principe d'authentification
 
 Notez les avantages à se connecter avec une paire de clé privée et publique vs se connecter avec mot de passe
+Il n'y a pas besoin de re-saisir le mdp à chaque connexion, on peut configurer une phrase si besoin à rentrer 
 
 Noter les étapes nécessaires pour y parvenir
-
+Il faut générer une clé publique et une clé privée depuis notre machine. Il faut ensuite envoyer la clé publique sur le serveur hébergant le site, et stocker notre clé privé dans notre dossier .ssh
+Il faut ensuite configurer le serveur AlwaysData pour qu'il accepte les clés SSH en connexion.
 Notez les étapes pour en tester le bon fonctionnement
+![image](https://github.com/user-attachments/assets/5afcbb64-5732-4b65-a62d-c7f47f8cffec)
+![image](https://github.com/user-attachments/assets/cd77d23e-a86c-43d1-952b-4288bbc9bbf7)
+![image](https://github.com/user-attachments/assets/25c89856-0317-4861-abe1-e5799bb712d8)
+![image](https://github.com/user-attachments/assets/9ff0f3a6-7b8e-48b6-aa31-1e0cc78690a0)
+
+
+![image](https://github.com/user-attachments/assets/bcea4a2d-def2-47cc-a61f-33dd3c000f1e)
+
+Nous n'avons pas les droits avec AlwaysData pour modifier directement dans le dossier ~/ssh/sshd_config/ afin de désactiver l'authentification par mdp 
+
+
