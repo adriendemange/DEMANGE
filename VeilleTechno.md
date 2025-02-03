@@ -10,7 +10,7 @@ Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/su
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
-MIT : https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926
+MIT : Un nouveau protocole de sécurité protège les données des attaquants lors des calculs basés sur le cloud / https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926
 
 
 IT Connect https://www.it-connect.fr/une-nouvelle-vague-extensions-malveillantes-cible-les-developpeurs-visual-studio-code/   -> Une nouvelle vague d’extensions malveillantes cible les développeurs sous Visual Studio Code ! / 19/12/2024 Florian BURNEL Cybersécurité
