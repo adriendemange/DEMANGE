@@ -10,6 +10,12 @@ Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/su
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
+
+MIT https://news.mit.edu/2024/study-smart-devices-ambient-light-sensors-pose-imaging-privacy-risk-0129  -> Étude : les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité des images  -> 
+Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents, utilisés pour ajuster la luminosité des écrans, pourraient être exploités par des pirates informatiques pour capturer des images des interactions tactiles des utilisateurs. En utilisant un algorithme d’imagerie informatique, les chercheurs ont montré que ces capteurs peuvent espionner des gestes tels que le balayage, le tapotement, ou même les mouvements lors de la visualisation de vidéos. Bien que ce piratage soit encore limité en raison de la faible vitesse de récupération d'image, il constitue une menace pour la confidentialité. Des mesures pour atténuer ces risques incluent la limitation de l'accès à ces capteurs et la réduction de leur précision.
+
+
+
 IT Connect : 16/01/2025 https://www.it-connect.fr/15-000-firewalls-fortigate-menaces-fuite-massive-config-complete-et-identifiants/  -  15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants   -   Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu. Cette fuite, organisée par pays et associée à des adresses IP publiques, concerne des appareils vulnérables depuis 2022, exploitant la faille zero-day CVE-2022-40684. Bien que la vulnérabilité CVE-2024-55591 récemment exploitée ne soit pas la cause de cette fuite, elle souligne l'importance de corriger les failles et de ne pas exposer les interfaces de gestion sur Internet pour prévenir de futures attaques.
 
 IT Connect :Clone2Leak : 25-01-2025 comment des failles Git font fuiter vos identifiants ? /  https://www.it-connect.fr/clone2leak-comment-des-failles-git-font-fuiter-vos-identifiants/    -  
