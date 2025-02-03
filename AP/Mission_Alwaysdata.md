@@ -89,3 +89,10 @@ Noter les étapes nécessaires pour y parvenir
 Il faut générer une clé publique et une clé privée depuis notre machine. Il faut ensuite envoyer la clé publique sur le serveur hébergant le site, et stocker notre clé privé dans notre dossier .ssh
 Il faut ensuite configurer le serveur AlwaysData pour qu'il accepte les clés SSH en connexion.
 Notez les étapes pour en tester le bon fonctionnement
+![image](https://github.com/user-attachments/assets/5afcbb64-5732-4b65-a62d-c7f47f8cffec)
+![image](https://github.com/user-attachments/assets/cd77d23e-a86c-43d1-952b-4288bbc9bbf7)
+![image](https://github.com/user-attachments/assets/25c89856-0317-4861-abe1-e5799bb712d8)
+![image](https://github.com/user-attachments/assets/9ff0f3a6-7b8e-48b6-aa31-1e0cc78690a0)
+
+
+
