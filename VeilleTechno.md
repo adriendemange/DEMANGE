@@ -10,6 +10,11 @@ Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/su
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
+IT Connect : DeepSeek : une base de données non protégée expose les conversations des utilisateurs !   -   https://www.it-connect.fr/deepseek-une-base-de-donnees-non-protegee-expose-les-conversations-des-utilisateurs/
+
+IT Connect :Microsoft Teams : tous les utilisateurs vont bénéficier d’une nouvelle protection contre le phishing !   -   https://www.it-connect.fr/microsoft-teams-tous-les-utilisateurs-vont-beneficier-dune-nouvelle-protection-contre-le-phishing/
+
+
 MIT : Un nouveau protocole de sécurité protège les données des attaquants lors des calculs basés sur le cloud / https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926
 
 
