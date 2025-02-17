@@ -35,7 +35,7 @@ nano /etc/samba/smb.conf
 
 [partage]
    comment = Partage de données
-   path = /srv/partage
+   path = partageadrien
    guest ok = no
    read only = no
    browseable = yes
@@ -54,6 +54,12 @@ groupadd partage
 gpasswd -a adrien partage
 chgrp -R partage /srv/partage/
 chmod -R g+rw /srv/partage/
+
+
+sudo chmod g+s /Administratif
+sudo chmod g+s /Technique
+sudo chmod g+s /Public
+sudo chmod g+s /Commercial
 
 Sécurité : min protocol = SMB2
 client min protocol = SMB2
