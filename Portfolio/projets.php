@@ -335,6 +335,12 @@ public class Hello2 {
                 <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" target="_blank">Voir le projet</a>
                 
             </div>
+            <div class="project-card">
+                <h3>Publication d'une documentation pour ACI Technology</h3>
+                <p>Document expliquant la réalisation d'un onboarding pour l'entreprise JICAP Performance (client de ACI Technology).</p>
+                <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projets_ACI/" target="_blank">Voir le projet</a>
+                
+            </div>
         </div>
     </body>
 </html>
