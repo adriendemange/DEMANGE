@@ -4,16 +4,41 @@ public class Voyageur {
 
     private String nom;
     private int anneeNaissance;
+    private String categorie;
 
     public Voyageur(String n, int a) {
         setNom(n);
         setAnneeNaissance(a);
+        setCategorie(a);
     }
     public Voyageur() {
         this.nom = "Defaut";
         this.anneeNaissance = 0;
     }
+    public void setCategorie(int a) {
+        int age = 2025 - a;
+        if (age < 1 ){
+            System.out.println("Catégorie nourisson !");
+            this.categorie = "Nourisson";
+        }
+        else if (age > 1 && age < 18){
+            System.out.println("Catégorie Enfant !");
+            this.categorie = "Enfant";
+        }
+        else if (age >= 18 && age <= 60){
+            System.out.println("Catégorie Adulte !");
+            this.categorie = "Adulte";
+        }
+        else if (age > 60 && age < 110){
+            System.out.println("Catégorie Senior !");
+            this.categorie = "Senior";
+        }
+        else {
+            System.err.println("Catégorie non valide !!!");
+            this.categorie = "NON VALIDE";
 
+        }
+    }
     public void setNom(String n) {
         if (n != null && n.length() >= 2) {
             this.nom = n;
@@ -48,6 +73,7 @@ public class Voyageur {
     }
     public void affiche() {
 
-        System.out.println("Info. Voyageur : " + nom + " ; " + anneeNaissance);
+        System.out.println("Info. Voyageur Nom/AnneNaissance/Age/Categorie: " + nom + " ; " + anneeNaissance + "; " + categorie);
+
     }
 }

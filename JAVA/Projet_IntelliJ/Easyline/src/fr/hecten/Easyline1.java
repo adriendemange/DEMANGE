@@ -14,14 +14,13 @@ public class Easyline1{
         Voyageur v2 = new Voyageur ();
         System.out.println("Voyageur v2 par défaut : ");
         v2.affiche();
-        Voyageur v3 = new Voyageur ();
         System.out.println("Initialisation de V3. Veuillez saisir un nom puis la date de naissance : ");
         String nom = sc.nextLine();
         int anneeNaissance = sc.nextInt();
         sc.nextLine();
-        v3.setNom(nom);
-        v3.setAnneeNaissance(anneeNaissance);
+        Voyageur v3 = new Voyageur (nom, anneeNaissance);
         v3.affiche();
+        System.out.println("Age de v3 : " + v3.getAge() );
     }
 }
 
