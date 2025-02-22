@@ -31,8 +31,29 @@
 					</tr>
 					<tr>
 						<th class='text-end'>Date de création</th>
-						<td><?php echo $lesClasses[$_GET['numClasse']]["dateCreation"]; ?></td>
+						<td><?php echo $lesClasses[$_GET['numClasse']]["dateCreation"]  ;?></td>
 					</tr>
+					<tr>
+						<th class='text-end'>Liste des élèves de la classe :</th>
+						<?php
+							// Nouveau tableau pour stocker les élèves trouvés
+							$elevesTrouves = array();
+
+							// Parcours du tableau des élèves pour vérifier la correspondance de la classe
+							foreach ($lesEleves as $eleve) {
+								if ($eleve['classe'] === $_GET['numClasse']) {
+									// Si la classe de l'élève correspond à la classe recherchée, ajoute cet élève dans le tableau $elevesTrouves
+									$elevesTrouves[] = $eleve;
+								}
+							}
+
+							// Affichage des élèves trouvés
+							 foreach ($elevesTrouves as $eleve) {
+								echo "<tr><td>" . $eleve['nom'] . " " . $eleve['prenom'] . "</td></tr>";
+							}
+							?>
+					</tr>
+					
 				</table>
 	</body>
 </html>

@@ -1,4 +1,6 @@
-<!--titre de la section-->
+<!DOCTYPE HTML>
+<html>
+<body>
 <div>
 	<h1>Liste des Elèves</h1>
 </div>
@@ -10,29 +12,27 @@
 			<th>Nom</th>
 			<th>Prénom</th>
 			<th>Classe</th>
+			<th>Date</th>
+			<th>Sexe</th>
 		</tr>
 	</thead>
 	<!--contenu du tableau (données)-->
-	<tr>
-		<td>1</td>
-		<td>Nom1</td>
-		<td>Prénom1</td>
-		<td>BTS SIO 1</td>
-        
+	<?php foreach ($lesEleves as $eleve) { 
+	?>
+    <tr>
+        <td> <?php echo $eleve["numEleve"]; ?></td>
+        <td> <?php echo $eleve["nom"]; ?></td>
+        <td> <?php echo $eleve["prenom"]; ?></td>
+        <td> <?php echo $eleve["classe"]; ?></td>
     </tr>
-	<tr>
-		<td>2</td>
-		<td>Nom2</td>
-		<td>Prénom2</td>
-		<td>BTS CIEL 1</td>
-        
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>Nom3</td>
-		<td>Prénom3</td>
-		<td>BTS SIO 1</td>
-       
-	</tr>
-
+	<?php 
+		}
+		if (!empty($_POST)) {
+			
+			echo $_POST['zone'];
+		}		
+	?>
+	
 </table>
+	</body>
+</html>

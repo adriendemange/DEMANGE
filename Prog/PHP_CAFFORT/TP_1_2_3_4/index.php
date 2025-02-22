@@ -33,7 +33,7 @@
 							include "classe_vue_liste.php";
 							break;
 						case 'eleves':
-							include "eleve_vue_liste.php"; 
+							include "donnees.php"; 
 							break;
 						case 'utilisateurConnexion':
 							include "utilisateur_vue_connexion.php"; 
@@ -43,6 +43,7 @@
 							break;
 						case "connexion";
 							include "eleve_vue_ajout.php";
+							include "donnees.php" ;
 							break;
 
 						/*default:
