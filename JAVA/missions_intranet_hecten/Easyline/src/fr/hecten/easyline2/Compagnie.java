@@ -72,9 +72,7 @@ public class Compagnie {
     public String getCouleurPrincipaleLogo() {
         return this.couleurPrincipaleLogo;
     }
-    public double getCa() {
-        return ca;
-    }
+    public double getCa() {return ca; }
     public void afficher() {
         System.out.println(this.nom);
         System.out.println(this.couleurPrincipaleLogo);

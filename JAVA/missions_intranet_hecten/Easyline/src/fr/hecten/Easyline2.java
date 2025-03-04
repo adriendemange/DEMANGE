@@ -50,7 +50,9 @@ public class Easyline2{
         if (MDP ==  maCompagnie7.code) {
             System.out.println("Voici le MDP de la compagnie " + maCompagnie7.nom + " : " + MDP);
         }
-
+        maCompagnie7.ca = 85000;
+        maCompagnie7.setCa();
+        System.out.println("Voici le CA de la compagnie " + maCompagnie7.nom + " : " + maCompagnie7.ca);
 
     }
 }

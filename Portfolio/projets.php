@@ -27,103 +27,87 @@
             <li>Administration et systèmes réseaux</li>
             <li>Réseau informatique</li>
         </ul>
-        <h2 class="description_projet_1" style="margin-left: 50px;">Red Team OSINT : </h2>
-        <div class="description_projet_1_p" style="margin-top: 50px; margin-left: 50px;">
-            <p class="blue"> Recherche d'informations sensibles sur Hackaday </p>
-            <p class="blue"> Utilisation de <b>SpiderFoot</b>, <b>WhoIs</b>, <b>Shodan</b>, <b>TheHarvester</b> </p>
+        <h2 class="description_projet_1">Red Team OSINT : </h2>
+        <div class="description_projet_1_p" style="margin-bottom: 30px; margin-top: 20px;">
+            <p class="blue" style="margin-bottom: 5px;"> Recherche d'informations sensibles sur Hackaday </p>
+            <p class="blue" style="max-width: 700px; word-wrap: break-word; margin-bottom: 20px;"> Utilisation de <b>SpiderFoot</b>, <b>WhoIs</b>, <b>Shodan</b>, <b>TheHarvester</b> </p>
         </div>
-        
-        <div style="height: 220px;"></div>
-        
         <a href="https://github.com/adriendemange/DEMANGE/tree/main/CYBERSECURITE_FANGNON" >
             <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint" style="border-radius: 10px;">
-        </a>    
-        <div style="display: flex; gap: 20px; align-items: flex-start;">
-            <div style="flex: 0 0 300px;">
-                <h3 style="color: yellow;">Fonctionnement du Terminal</h3>
-                <p style="color: white;">
-                    Ce terminal interactif permet de tester un programme Java qui permet de vérifier si l'utilisateur est majeur ou non.
-                    <ul>
-                        <li>Demande votre prénom</li>
-                        <li>Vérifie votre âge</li>
-                        <li>Confirme votre majorité</li>
-                    </ul>
-                    Appuyez sur votre touche "entrée" pour tester le programme !
-                </p>
-            </div>
-            
-            <div class="terminal-container" style="margin-top: 50px;">
-                <div class="controls">
-                    <button class="toggle-button" onclick="toggleEditor()">Voir/Masquer le code source</button>
-                </div>
-                <div class="editor" id="editor" style="display: none;">
-                    import java.util.Scanner;
-public class Hello2 {
-    public static void main(String[] args) {
-        System.out.printf("Bonjour et bienvenue sur mon programme ! \n");
-        Scanner sc = new Scanner(System.in);
-        String name;
-        boolean isValid;
-        do {
-            System.out.println("Veuillez entrer votre prénom :");
-            name = sc.nextLine();
-            
-            // Validation avec une regex (uniquement des lettres et espaces)
-            isValid = name.matches("[A-Za-zÀ-ÖØ-öø-ÿ\\s'-]+");
-            
-            if (!isValid) {
-                System.out.println("Saisie incorrecte du prénom, veuillez le resaisir.");
-            }
-        } while (!isValid);
+        </a>
 
-        System.out.println("D'accord. Bonjour " + name + "! \n");
-        System.out.println("Êtes-vous majeur ? (Vous pouvez rentrer votre âge, notre robot s'occupera du reste)");
-        int age = sc.nextInt();
-        while (age <= 0 || age > 100) {
-            System.out.println("Veuillez saisir un âge correct.\nSi la saisie est incorrecte, il est impossible de poursuivre le programme. (CTRL+C pour quitter) \n");
-            age = sc.nextInt();
-            sc.nextLine();
-        }
-        if (age >= 18) {
-            if (age === 100) {
-                System.out.println("" + name + " est centenaire. Il a " + age + " ans !!!\n");
-            } else {
-                System.out.println("" + name + " est majeur. Il a " + age + " ans \n");
+       
+
+    
+        <script>
+            function showProjectDetails(projectId) {
+                const modal = document.getElementById('projectModal');
+                const content = document.getElementById('modalContent');
+                
+                let projectContent = '';
+                switch(projectId) {
+                    case 1:
+                        projectContent = `
+                            <h2>Projet Infrastructure Réseau</h2>
+                            <p>Description détaillée du projet d'infrastructure...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Windows Server 2019</li>
+                                <li>Active Directory</li>
+                                <li>Configuration VLAN</li>
+                            </ul>
+                        `;
+                        break;
+                    case 2:
+                        projectContent = `
+                            <h2>Projet Supervision</h2>
+                            <p>Description détaillée du projet de supervision...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Nagios Core</li>
+                                <li>Scripts Shell</li>
+                                <li>Ubuntu Server</li>
+                            </ul>
+                        `;
+                        break;
+                    case 3:
+                        projectContent = `
+                            <h2>Projet Sécurité</h2>
+                            <p>Description détaillée du projet de sécurité...</p>
+                            <h3>Technologies utilisées:</h3>
+                            <ul>
+                                <li>Kali Linux</li>
+                                <li>Outils d'audit</li>
+                                <li>Solutions de sécurité</li>
+                            </ul>
+                        `;
+                        break;
+                }
+                
+                content.innerHTML = projectContent;
+                modal.style.display = 'block';
             }
-        } else {
-            System.out.println(" " + name + " n'est pas majeur" + "\n");
-        }
-        System.out.println("Juste pour être sûr... Êtes-vous vraiment majeur ? O/N ");
-        String rep = sc.next();
-        sc.nextLine();
-        while ((!(rep.equals("O"))) && (!(rep.equals("N")))) {
-            System.out.println("Veuillez saisir O pour Oui ou N pour non. Si la saisie est incorrecte, il est impossible de poursuivre le programme. (CTRL+C pour quitter) \n");
-            rep = sc.next();
-            sc.nextLine();
-        }
-        if ((rep.equals("O"))) {
-            if (age < 18) {
-                System.out.println("" + name + " est un menteur !! Il n'est pas majeur :( \n");
-            } else {
-                System.out.println("" + name + " est en effet majeur. \n");
+
+            function closeProjectDetails() {
+                document.getElementById('projectModal').style.display = 'none';
             }
-        } else if (rep.equals("N")) {
-            if (age > 18) {
-                System.out.println("" + name + " a oublié qu'il était majeur ! La viellesse sûrement... \n");
-            } else {
-                System.out.println("" + name + " n'est pas majeur ni un menteur !\n");
-            }
-        }
-        
-        System.out.println("Le programme s'est déroulé avec succès.\n");
-    }
-}</div>
-                <div class="terminal" id="terminal"></div>
-                <input type="text" id="userInput" class="terminal-input" placeholder="Entrez votre réponse ici...">
-                <div class="terminal-controls">
-                    <button class="execute-button" onclick="executeCode()">Exécuter</button>
-                    <button class="clear-button" onclick="clearTerminal()">Effacer le terminal</button>
-                </div>
+        </script>
+    
+        <div class="terminal-container" style="margin-top: 200px; margin-left: 200px;">
+            <div class="controls">
+                <select id="projectSelector" style="padding: 8px; margin-right: 10px; border-radius: 4px;">
+                    <option value="projet1">Vérification Majeur</option>
+                    <option value="projet2">TinyCar</option>
+                    <option value="projet3">Easyline</option>
+                </select>
+                <button class="toggle-button" onclick="toggleEditor()">Voir/Masquer le code source</button>
+            </div>
+            <div class="editor" id="editor" style="display: none;"></div>
+            <div class="terminal" id="terminal"></div>
+            <input type="text" id="userInput" class="terminal-input" placeholder="Entrez votre réponse ici...">
+            <div class="terminal-controls">
+                <button class="execute-button" onclick="executeCode()">Exécuter</button>
+                <button class="clear-button" onclick="clearTerminal()">Effacer le terminal</button>
             </div>
         </div>
     
@@ -212,7 +196,100 @@ public class Hello2 {
                 }
             });
             
+            // Définition des différents projets
+            const projects = {
+                projet1: {
+                    name: "Vérification Majeur",
+                    code: `public class VerificationMajeur {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String nom;
+        int age;
+        String confirmation;
+        
+        System.out.println("Quel est votre prénom ?");
+        nom = scanner.nextLine();
+        
+        if (nom.matches("[A-Za-zÀ-ÖØ-öø-ÿ\\s'-]+")) {
+            System.out.println("D'accord. Bonjour " + nom + "!");
+            System.out.println("Êtes-vous majeur ? (Vous pouvez rentrer votre âge, notre robot s'occupera du reste)");
+            age = scanner.nextInt();
+            
+            if (age > 0 && age <= 100) {
+                if (age >= 18) {
+                    if (age == 100) {
+                        System.out.println(nom + " est centenaire. Il a " + age + " ans !!!");
+                    } else {
+                        System.out.println(nom + " est majeur. Il a " + age + " ans");
+                    }
+                } else {
+                    System.out.println(nom + " n'est pas majeur");
+                }
+                
+                System.out.println("Juste pour être sûr... Êtes-vous vraiment majeur ? O/N");
+                confirmation = scanner.next();
+                
+                if (confirmation.equals("O")) {
+                    if (age < 18) {
+                        System.out.println(nom + " est un menteur !! Il n'est pas majeur :(");
+                    } else {
+                        System.out.println(nom + " est en effet majeur.");
+                    }
+                } else if (confirmation.equals("N")) {
+                    if (age > 18) {
+                        System.out.println(nom + " a oublié qu'il était majeur ! La vieillesse sûrement...");
+                    } else {
+                        System.out.println(nom + " n'est pas majeur ni un menteur !");
+                    }
+                }
+            }
+        }
+    }
+}`,
+                    execute: function(terminal, userInput) {
+                        terminal.innerHTML += `<span class="output">Quel est votre prénom ?</span><br>`;
+                        userInput.style.display = 'block';
+                        waitingForInput = true;
+                        currentStep = 0;
+                    }
+                },
+                projet2: {
+                    name: "Votre Projet 2",
+                    code: `public class Projet2 {
+    public static void main(String[] args) {
+        // Votre code du projet 2
+    }
+}`,
+                    execute: function(terminal, userInput) {
+                        // Logique d'exécution du projet 2
+                    }
+                },
+                projet3: {
+                    name: "Votre Projet 3",
+                    code: `public class Projet3 {
+    public static void main(String[] args) {
+        // Votre code du projet 3
+    }
+}`,
+                    execute: function(terminal, userInput) {
+                        // Logique d'exécution du projet 3
+                    }
+                }
+            };
+
+            // Gestionnaire de changement de projet
+            document.getElementById('projectSelector').addEventListener('change', function(e) {
+                const selectedProject = projects[e.target.value];
+                editor.setValue(selectedProject.code);
+                editor.clearSelection();
+                clearTerminal();
+            });
+
+            // Modification de la fonction executeCode
             window.executeCode = function() {
+                const selectedProjectId = document.getElementById('projectSelector').value;
+                const selectedProject = projects[selectedProjectId];
+                
                 terminal.innerHTML = '';
                 currentStep = 0;
                 userData = {
@@ -221,14 +298,8 @@ public class Hello2 {
                     confirmation: ''
                 };
                 
-                terminal.innerHTML += `<span class="command">> Compilation et exécution de majeur_projet.java...</span><br>`;
-                terminal.innerHTML += `<span class="output">Bonjour et bienvenue sur mon programme ! Il permet de vérifier si l'utilisateur est majeur ou non.\n</span><br>`;
-                terminal.innerHTML += `<span class="output">Veuillez entrer votre prénom :</span><br>`;
-                
-                userInput.style.display = 'block';
-                userInput.focus();
-                waitingForInput = true;
-                terminal.scrollTop = terminal.scrollHeight;
+                terminal.innerHTML += `<span class="command">> Compilation et exécution de ${selectedProject.name}...</span><br>`;
+                selectedProject.execute(terminal, userInput);
             }
 
             window.clearTerminal = function() {
@@ -242,6 +313,11 @@ public class Hello2 {
                 const editor = document.getElementById('editor');
                 if (editor.style.display === 'none') {
                     editor.style.display = 'block';
+                    // Met à jour le code dans l'éditeur avec le projet sélectionné
+                    const selectedProjectId = document.getElementById('projectSelector').value;
+                    const selectedProject = projects[selectedProjectId];
+                    ace.edit("editor").setValue(selectedProject.code);
+                    ace.edit("editor").clearSelection();
                 } else {
                     editor.style.display = 'none';
                 }
@@ -274,73 +350,12 @@ public class Hello2 {
             opacity: 0.8;
         }
 
-        .project-card {
-            background-color: #2c3e50; /* Couleur de fond */
-            color: white; /* Couleur du texte */
-            padding: 15px; /* Espacement interne */
-            border-radius: 8px; /* Coins arrondis */
-            margin-bottom: 20px; /* Espacement entre les cartes */
-            width: 250px; /* Largeur fixe */
-            height: auto; /* Hauteur automatique */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
-        }
-
-        .projects-section {
-            display: flex;
-            flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si l'espace est insuffisant */
-            gap: 20px; /* Espace entre les cartes */
-        }
-
-        .project-card {
-            background-color: #2c3e50; /* Couleur de fond */
-            color: white; /* Couleur du texte */
-            padding: 15px; /* Espacement interne */
-            border-radius: 8px; /* Coins arrondis */
-            width: 250px; /* Largeur fixe */
-            height: auto; /* Hauteur automatique */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+        .description_projet_1_p .blue {
+            margin-bottom: 5px;
+            max-width: 700px;
+            word-wrap: break-word;
         }
         </style>
     
-        <div class="projects-section" style="margin-top: 50px;">
-            <h2 style="color: yellow; width: 100%;">Mes Projets</h2>
-            <div class="project-card">
-                <h3>Filius/Cisco Packet Tracer</h3>
-                <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <h3>ZooTickoon</h3>
-                <p>Mise en place d'un site web à propos d'un Zoo.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <h3>TinyCar</h3>
-                <p>Programmation en JAVA / Python permettant de gérer un panier d'achat.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/JAVA/TinyCar/TinyCar/src/fr/hecten" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <h3>Système Windows : Droits, fichiers, ...</h3>
-                <p>Mise en place d'un portail d'authentification pour accéder à une page web.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/SYSTEME_T" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <h3>Code source du PortFolio </h3>
-                <p>Programmation en HTML / CSS de ce PortFolio puis mise en ligne avec AlwaysData.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/Portfolio" target="_blank">Voir le projet</a>
-            </div>
-            <div class="project-card">
-                <h3>Publication du PortFolio avec AlwaysData</h3>
-                <p>Configuration d'un serveur afin d'héberger notre site Web.</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" target="_blank">Voir le projet</a>
-                
-            </div>
-            <div class="project-card">
-                <h3>Publication d'une documentation pour ACI Technology</h3>
-                <p>Document expliquant la réalisation d'un onboarding pour l'entreprise JICAP Performance (client de ACI Technology).</p>
-                <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projets_ACI/" target="_blank">Voir le projet</a>
-                
-            </div>
-        </div>
     </body>
 </html>

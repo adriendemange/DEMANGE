@@ -5,7 +5,13 @@
 		<title>Liste des élèves</title>
 		<!-- Utilisation de la feuille de style Bootstrap -->
 		<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+		
 	</head>
+	<style>
+        body {
+            background-color:      #5f3737     ; 
+        }
+    </style>
 	<body>
 		<!-- Menu -->
 		<nav class='navbar navbar-expand-lg bg-primary'>
@@ -27,23 +33,23 @@
 		<div class='text-center'>
 			<br>
 			<?php 
+				include "fonctions.php" ;
 				if (isset($_GET['page'])) {
 					switch ($_GET['page']) {
 						case 'classes':
 							include "classe_vue_liste.php";
 							break;
 						case 'eleves':
-							include "donnees.php"; 
+							include "eleve_vue_liste.php"; 
 							break;
 						case 'utilisateurConnexion':
 							include "utilisateur_vue_connexion.php"; 
 							break;
 						case "details";
-							include "donnees.php"; 
+							include "classe_vue_detail.php"; 
 							break;
 						case "connexion";
 							include "eleve_vue_ajout.php";
-							include "donnees.php" ;
 							break;
 
 						/*default:
