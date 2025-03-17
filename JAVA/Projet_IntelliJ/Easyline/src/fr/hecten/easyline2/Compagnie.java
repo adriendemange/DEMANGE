@@ -7,7 +7,7 @@ public class Compagnie {
     public double ca;
     public String couleurPrincipaleLogo;
     public String couleurSecondaireLogo;
-
+//TODO faire mission 4
     public Compagnie() {
 
     }

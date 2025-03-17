@@ -1,5 +1,6 @@
 package fr.hecten;
 
+//TODO Faire mission 3
 
 import fr.hecten.easyline2.Compagnie;
 
@@ -50,8 +51,6 @@ public class Easyline2{
         if (MDP ==  maCompagnie7.code) {
             System.out.println("Voici le MDP de la compagnie " + maCompagnie7.nom + " : " + MDP);
         }
-
-
     }
 }
 

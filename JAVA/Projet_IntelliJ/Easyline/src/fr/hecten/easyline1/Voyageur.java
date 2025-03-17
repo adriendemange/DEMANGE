@@ -47,13 +47,9 @@ public class Voyageur {
             this.nom = "Inconnu"; // Valeur par défaut
         }
     }
-    /*public String getCategorie() {
-        switch (this.anneeNaissance) {
-            case < 1 : return "Nourisson";
-
-        }
+    public String getCategorie() {
+        return this.categorie;
     }
-     */
     public void setAnneeNaissance(int a) {
         if (a <= 1910 || a > 2025) {
             System.err.println("L'année de naissance n'est pas correcte");

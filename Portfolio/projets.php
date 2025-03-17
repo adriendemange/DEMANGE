@@ -341,6 +341,16 @@ public class Hello2 {
                 <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projets_ACI/" target="_blank">Voir le projet</a>
                 
             </div>
+            <div class="project-card">
+                <h3>Filius/Cisco Packet Tracer</h3>
+                <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
+                <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/Filius" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <h3>ZooTickoon</h3>
+                <p>Mise en place d'un site web à propos d'un Zoo.</p>
+                <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" target="_blank">Voir le projet</a>
+            </div>
         </div>
     </body>
 </html>
