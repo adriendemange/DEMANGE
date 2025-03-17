@@ -73,7 +73,11 @@
 
             <div class="right-column">
                 <section class="skills-section">
+<<<<<<< HEAD
                     <h2 class="section-title" style="position: relative; z-index: 999; color: white !important; margin-bottom: 20px; text-align: center; font-size: 24px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Compétences</h2>
+=======
+                    <h2 class="section-title">Compétences</h2>
+>>>>>>> 6be11356f4e5856aae64ee1e98adf5ba5fbdf383
                     <div class="skills-compact">
                         <div class="skill-bar">
                             <p class="skill-title">Réseau & Système</p>

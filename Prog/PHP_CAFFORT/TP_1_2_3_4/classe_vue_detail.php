@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-
+<?php include "donnees.php" ?>
 					<!--titre de la section-->
 				<div>
 					<h1>Informations de la classe <?php echo $_GET['numClasse'] ; ?>.</h1>
+					<?php $con = bddNotesges();  ?>
 					
 				</div>
 				<!--tableau des détails de la classe-->
@@ -36,24 +37,21 @@
 					<tr>
 						<th class='text-end'>Liste des élèves de la classe :</th>
 						<?php
-							// Nouveau tableau pour stocker les élèves trouvés
-							$elevesTrouves = array();
-
-							// Parcours du tableau des élèves pour vérifier la correspondance de la classe
-							foreach ($lesEleves as $eleve) {
-								if ($eleve['classe'] === $_GET['numClasse']) {
-									// Si la classe de l'élève correspond à la classe recherchée, ajoute cet élève dans le tableau $elevesTrouves
-									$elevesTrouves[] = $eleve;
+							$numClasseURL = $_GET['numClasse'];
+							$req = "SELECT nomUt, prenomUt FROM utilisateur WHERE idSection = $numClasseURL ";
+							$res = mysqli_query($con, $req);
+							$resultats = mysqli_fetch_all($res, MYSQLI_ASSOC); 
+							foreach ($resultats as $uneLigne) {
+								echo "</tr>";
+								foreach ($uneLigne as $uneCellule) { 
+										echo "<td>" . $uneCellule . "</td>"; // Affichage de chaque cellule		
 								}
+								 echo "</tr>"; // Fin de la ligne pour cet utilisateur
 							}
-
-							// Affichage des élèves trouvés
-							 foreach ($elevesTrouves as $eleve) {
-								echo "<tr><td>" . $eleve['nom'] . " " . $eleve['prenom'] . "</td></tr>";
-							}
+								mysqli_close($con);	
 							?>
-					</tr>
 					
+					</tr>
 				</table>
 	</body>
 </html>

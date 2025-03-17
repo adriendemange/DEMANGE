@@ -51,6 +51,13 @@ public class Easyline2{
         if (MDP ==  maCompagnie7.code) {
             System.out.println("Voici le MDP de la compagnie " + maCompagnie7.nom + " : " + MDP);
         }
+<<<<<<< HEAD:JAVA/Projet_IntelliJ/Easyline/src/fr/hecten/Easyline2.java
+=======
+        maCompagnie7.ca = 85000;
+        maCompagnie7.setCa();
+        System.out.println("Voici le CA de la compagnie " + maCompagnie7.nom + " : " + maCompagnie7.ca);
+
+>>>>>>> 6be11356f4e5856aae64ee1e98adf5ba5fbdf383:JAVA/missions_intranet_hecten/Easyline/src/fr/hecten/Easyline2.java
     }
 }
 
