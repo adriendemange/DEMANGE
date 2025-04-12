@@ -2,141 +2,345 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>A propos de moi</title>
+        <title>Page veille technologique de Adrien</title>
         <link href="index.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #1f1f1f 0%, #111111 100%);
+                color: white;
+                font-family: Arial, sans-serif;
+                min-height: 100vh;
+            }
+
+            .content {
+                margin-top: 80px;
+                padding: 2rem;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                padding: 2rem;
+                margin-top: 2rem;
+            }
+
+            .card {
+                background: rgba(25, 25, 25, 0.85);
+                border-radius: 15px;
+                padding: 2rem;
+                color: white;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .card h2 {
+                color: #4a90e2;
+                margin-bottom: 1.5rem;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                color: #e0e0e0;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .card ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .card li {
+                margin-bottom: 0.8rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            .card li::before {
+                content: "•";
+                color: #4a90e2;
+                position: absolute;
+                left: 0;
+            }
+
+            .fade-in-text {
+                opacity: 0;
+                animation: fadeIn 1s ease-in forwards;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+
+            .delay-1 { animation-delay: 0.2s; }
+            .delay-2 { animation-delay: 0.4s; }
+            .delay-3 { animation-delay: 0.6s; }
+
+            .articles-section {
+                margin-top: 3rem;
+                padding: 2rem;
+            }
+
+            .section-title {
+                color: #4a90e2;
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            .article-card {
+                background: rgba(25, 25, 25, 0.85);
+                border-radius: 15px;
+                padding: 1.5rem;
+                color: white;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .article-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .article-card h3 {
+                color: #4a90e2;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .article-date {
+                color: #888;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .article-summary {
+                color: #e0e0e0;
+                margin-bottom: 1rem;
+                line-height: 1.4;
+            }
+
+            .article-details {
+                color: #ccc;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                line-height: 1.4;
+            }
+
+            .read-more {
+                display: inline-block;
+                color: #4a90e2;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                border: 1px solid #4a90e2;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+            }
+
+            .read-more:hover {
+                background: rgba(74, 144, 226, 0.1);
+                color: #fff;
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
-            <a href="index.php">Accueil</a>
-            <a href="projets.php">Projets BTS</a>
-            <a href="entreprise.php">Entreprise</a>
-            <a href="veille.php">Veille Technologique</a>
-            <a href="a_propos_de_moi.php">À propos de moi</a>
-        </div> 
-        <a href="https://hecten.fr/">
-            <img src="Img/hecten_image.png" width="180" alt="HECTEN" class="hecten-logo" style="border-radius: 5px;">
-        </a>
-        <div class="description_veille">
-            <h2 class ="fade-in-text">Bienvenue sur ma page de veille technologique !</h2>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.php" class="nav-link">Accueil</a>
+                <a href="projets.php" class="nav-link">Projets BTS</a>
+                <a href="entreprise.php" class="nav-link">Entreprise</a>
+                <a href="veille.php" class="nav-link active">Veille Technologique</a>
+                <a href="a_propos_de_moi.php" class="nav-link">À propos de moi</a>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="grid-container">
+                <!-- Carte Définition -->
+                <div class="card fade-in-text">
+                    <h2>Qu'est-ce que la veille technologique ?</h2>
+                    <p>La veille technologique est un processus continu de surveillance et d'analyse des évolutions technologiques dans un domaine spécifique. Elle permet de :</p>
+                    <ul>
+                        <li>Anticiper les innovations</li>
+                        <li>Identifier les opportunités</li>
+                        <li>Prendre des décisions éclairées</li>
+                        <li>Maintenir une compétitivité</li>
+                    </ul>
+                </div>
 
-            <p >La veille technologique, c'est quoi ? L'atout principal de la veille technologique est d'identifier ou d'anticiper des innovations par secteurs d'activité. Les sources de veille technologique constituent une information stratégique incontournable pour devancer, développer et exploiter des inventions.</p>
-            
-            <p >Le thème de la cybersécurité me passionne donc ce sera le sujet principale de cette page </p>
-            <br> </br>
-            <section class="articles">
-                <h2>Articles récents en Cybersécurité</h2>
-                <div class="article-grid">
-                    <article class="article-card">
+                <!-- Carte Méthodologie -->
+                <div class="card fade-in-text delay-1">
+                    <h2>Ma méthodologie de veille</h2>
+                    <p>Pour mener à bien ma veille technologique, j'utilise plusieurs outils et méthodes :</p>
+                    <ul>
+                        <li>Google Alerts pour les notifications automatiques</li>
+                        <li>Réseaux sociaux professionnels (LinkedIn, Twitter)</li>
+                        <li>Blogs et sites spécialisés en cybersécurité</li>
+                        <li>Forums et communautés en ligne</li>
+                        <li>Newsletters de sécurité informatique</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Thématiques -->
+                <div class="card fade-in-text delay-2">
+                    <h2>Mes thématiques de veille</h2>
+                    <p>Je me concentre particulièrement sur :</p>
+                    <ul>
+                        <li>Cybersécurité et sécurité des réseaux</li>
+                        <li>Nouvelles vulnérabilités et menaces</li>
+                        <li>Outils de sécurité et de monitoring</li>
+                        <li>Bonnes pratiques en sécurité informatique</li>
+                        <li>Évolutions des systèmes d'exploitation</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Sources -->
+                <div class="card fade-in-text delay-3">
+                    <h2>Mes principales sources</h2>
+                    <p>Quelques-unes de mes sources d'information privilégiées :</p>
+                    <ul>
+                        <li>Blogs de sécurité (Kaspersky, ESET, Malwarebytes)</li>
+                        <li>Portails d'actualité tech (ZDNet, The Hacker News)</li>
+                        <li>Communautés Reddit dédiées à la sécurité</li>
+                        <li>Forums spécialisés (Security Stack Exchange)</li>
+                        <li>Conférences et webinaires en ligne</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section Articles -->
+            <div class="articles-section">
+                <h2 class="section-title fade-in-text">Articles de Veille Technologique</h2>
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <div class="article-card fade-in-text">
                         <h3>Faille FortiGate</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants.</p>
+                        <div class="article-details">
+                            <p>Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/15-000-firewalls-fortigate-menaces-fuite-massive-config-complete-et-identifiants/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu. Cette fuite, organisée par pays et associée à des adresses IP publiques, concerne des appareils vulnérables depuis 2022, exploitant la faille zero-day CVE-2022-40684. Bien que la vulnérabilité CVE-2024-55591 récemment exploitée ne soit pas la cause de cette fuite, elle souligne l'importance de corriger les failles et de ne pas exposer les interfaces de gestion sur Internet pour prévenir de futures attaques.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 2 -->
+                    <div class="article-card fade-in-text">
                         <h3>Clone2Leak : Vulnérabilités Git</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Découverte de vulnérabilités dans GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Découverte de vulnérabilités dans GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
+                        <div class="article-details">
+                            <p>Une série de vulnérabilités appelées Clone2Leak a été découverte dans des outils liés à Git, comme GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/clone2leak-comment-des-failles-git-font-fuiter-vos-identifiants/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Une série de vulnérabilités appelées Clone2Leak a été découverte dans des outils liés à Git, comme GitHub Desktop, Git LFS, et GitHub Credential Manager. Ces failles permettent à des attaquants de récupérer des identifiants (mots de passe, tokens) en manipulant des URL ou en exploitant des erreurs dans les outils d'authentification. Pour se protéger, il est recommandé de mettre à jour ces outils vers les versions suivantes : GitHub Desktop 3.4.12, Git Credential Manager 2.6.1, Git LFS 3.6.1, et gh CLI 2.63.0, et d'activer le paramètre credential.protectProtocol dans Git pour éviter l'exfiltration d'identifiants vers des serveurs malveillants.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 3 -->
+                    <div class="article-card fade-in-text">
                         <h3>Windows RID Hijacking</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Le groupe Andariel utilise le RID hijacking pour créer des comptes admin cachés sur Windows.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Le groupe Andariel utilise le RID hijacking pour créer des comptes admin cachés sur Windows.</p>
+                        <div class="article-details">
+                            <p>Le groupe de pirates nord-coréen Andariel, affilié à Lazarus, utilise une technique appelée RID hijacking pour élever discrètement les privilèges des comptes Windows.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/windows-rid-hijacking-utilisee-par-pirates-pour-creer-un-compte-admin-cache/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Le groupe de pirates nord-coréen Andariel, affilié à Lazarus, utilise une technique appelée RID hijacking pour élever discrètement les privilèges des comptes Windows. Cette méthode permet de transformer un compte utilisateur standard en administrateur en modifiant le RID (Relative Identifier) associé à l'identifiant de sécurité (SID) du compte. Les attaquants accèdent d'abord à la base SAM de Windows via le Registre, nécessitant un accès SYSTEM, puis utilisent des outils comme PsExec et JuicyPotato pour effectuer l'élévation. Après avoir créé un compte masqué et modifié son RID, ils effacent les traces de l'attaque pour rendre l'accès persistant et discret. Pour se protéger, il est conseillé de désactiver les comptes invités, de bloquer les outils malveillants et de surveiller les changements dans la base SAM.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 4 -->
+                    <div class="article-card fade-in-text">
                         <h3>Faille ChatGPT DDoS</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Le robot d'indexation ChatGPT-User peut être exploité pour des attaques DDoS.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Le robot d'indexation ChatGPT-User peut être exploité pour des attaques DDoS.</p>
+                        <div class="article-details">
+                            <p>Une vulnérabilité a été découverte dans le robot d'indexation ChatGPT-User, utilisé pour parcourir le Web, qui pourrait être exploité pour lancer des attaques DDoS.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/faille-robot-indexation-chatgpt-utilise-pour-lancer-des-attaques-ddos/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Une vulnérabilité a été découverte dans le robot d'indexation ChatGPT-User, utilisé pour parcourir le Web, qui pourrait être exploité pour lancer des attaques DDoS. Un chercheur en sécurité a démontré que, par l'envoi d'une requête HTTP contenant une liste d'URLs, un attaquant pourrait amener le robot à visiter ces pages simultanément, générant un trafic massif et saturant un site web. Cette attaque, sans besoin d'authentification, pourrait entraîner entre 20 et 5 000 requêtes par seconde, causant un déni de service. Malgré le signalement à OpenAI et Microsoft, aucune réponse n'a été reçue et la vulnérabilité pourrait toujours être présente.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 5 -->
+                    <div class="article-card fade-in-text">
                         <h3>Faille 7-Zip Windows</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Vulnérabilité permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Vulnérabilité permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
+                        <div class="article-details">
+                            <p>Une vulnérabilité a été découverte dans 7-Zip, permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/faille-7-zip-contourner-securite-motw-de-windows-cve-2025-0411/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Une vulnérabilité a été découverte dans 7-Zip, permettant de contourner la protection Mark of the Web (MotW) de Windows. Cette protection identifie les fichiers provenant de sources externes comme Internet et avertit l'utilisateur des risques d'exécution. Cependant, la faille (CVE-2025-0411) empêche ce marqueur de se propager correctement aux fichiers extraits d'archives compressées, permettant ainsi l'exécution de code malveillant sans avertissement. Cette vulnérabilité nécessite une interaction de l'utilisateur pour être exploitée. Un correctif a été publié par 7-Zip (version 24.09), mais les utilisateurs doivent mettre à jour manuellement l'application pour se protéger.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 6 -->
+                    <div class="article-card fade-in-text">
                         <h3>DeepSeek : Fuite de données</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Base de données non protégée exposant les conversations des utilisateurs de l'IA DeepSeek.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Base de données non protégée exposant les conversations des utilisateurs de l'IA DeepSeek.</p>
+                        <div class="article-details">
+                            <p>DeepSeek, une IA chinoise rivalisant avec ChatGPT, a suspendu les nouvelles inscriptions après une cyberattaque DDoS massive visant ses serveurs.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/deepseek-une-base-de-donnees-non-protegee-expose-les-conversations-des-utilisateurs/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>DeepSeek, une IA chinoise rivalisant avec ChatGPT, a suspendu les nouvelles inscriptions après une cyberattaque DDoS massive visant ses serveurs. L'attaque perturbe son API et son interface Web Chat, bien que les utilisateurs existants puissent toujours y accéder. En parallèle, des experts en cybersécurité ont découvert que DeepSeek est vulnérable aux jailbreaks, permettant la génération de contenus malveillants, comme des ransomwares ou des instructions pour fabriquer des explosifs. Cette faille de sécurité soulève des inquiétudes quant à l'absence de garde-fous sur la plateforme.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 7 -->
+                    <div class="article-card fade-in-text">
                         <h3>Risque des capteurs de lumière</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité.</p>
+                        <div class="article-details">
+                            <p>Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents pourraient être exploités pour capturer des images des interactions tactiles.</p>
+                        </div>
                         <a href="https://news.mit.edu/2024/study-smart-devices-ambient-light-sensors-pose-imaging-privacy-risk-0129" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents, utilisés pour ajuster la luminosité des écrans, pourraient être exploités par des pirates informatiques pour capturer des images des interactions tactiles des utilisateurs. En utilisant un algorithme d'imagerie informatique, les chercheurs ont montré que ces capteurs peuvent espionner des gestes tels que le balayage, le tapotement, ou même les mouvements lors de la visualisation de vidéos. Bien que ce piratage soit encore limité en raison de la faible vitesse de récupération d'image, il constitue une menace pour la confidentialité. Des mesures pour atténuer ces risques incluent la limitation de l'accès à ces capteurs et la réduction de leur précision.</p>
                     </div>
 
-                    <article class="article-card">
+                    <!-- Article 8 -->
+                    <div class="article-card fade-in-text">
                         <h3>Extensions malveillantes VS Code</h3>
-                        <p class="date">Janvier 2024</p>
-                        <p class="summary">Des extensions malveillantes ciblent les développeurs sur Visual Studio Code.</p>
+                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-summary">Des extensions malveillantes ciblent les développeurs sur Visual Studio Code.</p>
+                        <div class="article-details">
+                            <p>Des chercheurs en cybersécurité ont découvert une campagne de pirates informatiques ciblant les développeurs via des extensions malveillantes sur la marketplace de Visual Studio Code.</p>
+                        </div>
                         <a href="https://www.it-connect.fr/une-nouvelle-vague-extensions-malveillantes-cible-les-developpeurs-visual-studio-code/" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Des chercheurs en cybersécurité ont découvert une campagne de pirates informatiques ciblant les développeurs via des extensions malveillantes sur la marketplace de Visual Studio Code. Ces extensions, souvent déguisées en outils liés à la blockchain ou à des services comme Zoom, permettent aux attaquants de télécharger des payloads sur les machines infectées. Une fois installées, elles exécutent des scripts pour établir des connexions vers des domaines malveillants, permettant aux pirates d'ajouter du code malveillant à des projets en cours.</p>
-                    </div>
-
-                    <article class="article-card">
-                        <h3>Recherche sur les électrodes</h3>
-                        <p class="date">Octobre 2024</p>
-                        <p class="summary">Étude sur l'amélioration de l'efficacité des processus électrochimiques.</p>
-                        <a href="https://news.mit.edu/2024/bubble-findings-could-unlock-better-electrode-electrolyzer-designs-1008" class="read-more">Lire la suite</a>
-                    </article>
-                    <div class="article-details">
-                        <p>Une nouvelle étude des bulles sur les surfaces des électrodes pourrait aider à améliorer l'efficacité des processus électrochimiques qui produisent des carburants, des produits chimiques et des matériaux. David L. Chandler | MIT News Publication Date:October 8, 2024</p>
                     </div>
                 </div>
-            </section>
-
-            <footer>
-                <p class="signature">Dernière mise à jour : 19/12/2024 - Par Florian BURNEL</p>
-            </footer>
+            </div>
         </div>
+        
+        <script>
+            // Script pour cacher/montrer la navbar au scroll
+            let lastScroll = 0;
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    // Scroll vers le bas - cache la navbar
+                    navbar.classList.add('hidden');
+                } else {
+                    // Scroll vers le haut - montre la navbar
+                    navbar.classList.remove('hidden');
+                }
+                
+                lastScroll = currentScroll;
+            });
+        </script>
     </body>
 </html>
-
-<style>
-    .article-details {
-        margin-top: 1rem;
-        padding: 1rem;
-        background: #f9f9f9;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-    }
-
-    .article-details p {
-        line-height: 1.6;
-        color: #333;
-    }
-</style>
