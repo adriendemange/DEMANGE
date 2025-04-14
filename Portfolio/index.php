@@ -232,9 +232,7 @@
                         <span class="tag">Réseaux</span>
                         <span class="tag">SISR</span>
                         <span class="tag">Linux</span>
-                    </div>
-                </div>
-            </div>
+         
         </header>
 
         <main class="grid-container">

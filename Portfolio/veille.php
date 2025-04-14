@@ -200,6 +200,7 @@
                         <li>Newsletters de sécurité informatique</li>
                     </ul>
                 </div>
+				
 
                 <!-- Carte Thématiques -->
                 <div class="card fade-in-text delay-2">
@@ -232,21 +233,76 @@
             <div class="articles-section">
                 <h2 class="section-title fade-in-text">Articles de Veille Technologique</h2>
                 <div class="articles-grid">
+				<!-- Article 12 -->
+                    <div class="article-card fade-in-text">
+                        <h3>Morocco Investigates Social Security Agency Data Leak</h3>
+                        <p class="article-date">Avril 2025</p>
+                        <p class="article-summary">Une faille de sécurité a valu la diffusion d'informations sensibles sur Telegram provenant de la sécurité sociale au Maroc.</p>
+                        <div class="article-details">
+                            <p>Initial investigations conducted by the Moroccan National Social Security Fund (CNSS) revealed that its IT systems were the target of a series of cyberattacks in which the threat actor "aimed at circumventing security measures," ultimately leading to the leak of the agency's data, according to a CNSS press release.
+
+The CNSS is a public institution responsible for managing the social security plans for employees in Morocco's private sector.</p>
+                        </div>
+                        <a href="https://www.darkreading.com/threat-intelligence/morocco-investigates-social-security-agency-data-leak" class="read-more">Lire la suite</a>
+                    </div>
+				
+				<!-- Article 11 -->
+                    <div class="article-card fade-in-text">
+                        <h3>Paper Werewolf Deploys PowerModul Implant in Targeted Cyberattacks on Russian Sectors</h3>
+                        <p class="article-date">Avril 2025</p>
+                        <p class="article-summary">L'organisation Paper Werewolf est une menace pour la Russie part ses nombreuses attaques dans le pays.</p>
+                        <div class="article-details">
+                            <p>The threat actor known as Paper Werewolf has been observed exclusively targeting Russian entities with a new implant called PowerModul.
+
+The activity, which took place between July and December 2024, singled out organizations in the mass media, telecommunications, construction, government entities, and energy sectors, Kaspersky said in a new report published Thursday.
+
+Paper Werewolf, also known as GOFFEE, is assessed to have conducted at least seven campaigns since 2022, according to BI.ZONE, with the attacks mainly aimed at government, energy, financial, media, and other organizations.</p>
+                        </div>
+                        <a href="https://thehackernews.com/2025/04/paper-werewolf-deploys-powermodul.html" class="read-more">Lire la suite</a>
+                    </div>
+				<!-- Article 10 -->
+                    <div class="article-card fade-in-text">
+                        <h3>Incomplete Patch in NVIDIA Toolkit Leaves CVE-2024-0132 Open to Container Escapes - TheHackerNews</h3>
+                        <p class="article-date">Avril 2025</p>
+                        <p class="article-summary">Vulnérabilité découverte pour le logiciel "NVIDIA Container Toolkit"</p>
+                        <div class="article-details">
+                            <p>Cybersecurity researchers have detailed a case of an incomplete patch for a previously addressed security flaw impacting the NVIDIA Container Toolkit that, if successfully exploited, could put sensitive data at risk.
+
+The original vulnerability CVE-2024-0132 (CVSS score: 9.0) is a Time-of-Check Time-of-Use (TOCTOU) vulnerability that could lead to a container escape attack and allow for unauthorized access to the underlying host.</p>
+                        </div>
+                        <a href="https://thehackernews.com/2025/04/incomplete-patch-in-nvidia-toolkit.html" class="read-more">Lire la suite</a>
+                    </div>
+				
+				<!-- Article 9 -->
+                    <div class="article-card fade-in-text">
+                        <h3>Chrome 136 fixes 20-year browser history privacy risk - BleepingComputer</h3>
+                        <p class="article-date">Avril 2025</p>
+                        <p class="article-summary">Changement de la part de Chrome sur la confidentialité de l'utilisateur.</p>
+                        <div class="article-details">
+                            <p>Google is fixing a long-standing privacy issue that, for years, enabled websites to determine users' browsing history through the previously visited links.
+
+The problem arises from allowing sites to style links as ':visited,' meaning showing them as another color instead of the default blue if a user had previously clicked on them. 
+
+The system displays this color change regardless of which site they were on when they clicked the link, allowing other sites to potentially use creative scripts that leak the user's browsing history</p>
+                        </div>
+                        <a href="https://www.bleepingcomputer.com/news/security/chrome-136-fixes-20-year-browser-history-privacy-risk/" class="read-more">Lire la suite</a>
+                    </div>
                     <!-- Article 1 -->
                     <div class="article-card fade-in-text">
                         <h3>Faille FortiGate</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Mars 2025</p>
                         <p class="article-summary">15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants.</p>
                         <div class="article-details">
                             <p>Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu.</p>
                         </div>
                         <a href="https://www.it-connect.fr/15-000-firewalls-fortigate-menaces-fuite-massive-config-complete-et-identifiants/" class="read-more">Lire la suite</a>
                     </div>
+					
 
                     <!-- Article 2 -->
                     <div class="article-card fade-in-text">
                         <h3>Clone2Leak : Vulnérabilités Git</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Mars 2025</p>
                         <p class="article-summary">Découverte de vulnérabilités dans GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
                         <div class="article-details">
                             <p>Une série de vulnérabilités appelées Clone2Leak a été découverte dans des outils liés à Git, comme GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
@@ -257,7 +313,7 @@
                     <!-- Article 3 -->
                     <div class="article-card fade-in-text">
                         <h3>Windows RID Hijacking</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Mars 2025</p>
                         <p class="article-summary">Le groupe Andariel utilise le RID hijacking pour créer des comptes admin cachés sur Windows.</p>
                         <div class="article-details">
                             <p>Le groupe de pirates nord-coréen Andariel, affilié à Lazarus, utilise une technique appelée RID hijacking pour élever discrètement les privilèges des comptes Windows.</p>
@@ -268,7 +324,7 @@
                     <!-- Article 4 -->
                     <div class="article-card fade-in-text">
                         <h3>Faille ChatGPT DDoS</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Fevrier 2025</p>
                         <p class="article-summary">Le robot d'indexation ChatGPT-User peut être exploité pour des attaques DDoS.</p>
                         <div class="article-details">
                             <p>Une vulnérabilité a été découverte dans le robot d'indexation ChatGPT-User, utilisé pour parcourir le Web, qui pourrait être exploité pour lancer des attaques DDoS.</p>
@@ -279,7 +335,7 @@
                     <!-- Article 5 -->
                     <div class="article-card fade-in-text">
                         <h3>Faille 7-Zip Windows</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Janvier 2025</p>
                         <p class="article-summary">Vulnérabilité permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
                         <div class="article-details">
                             <p>Une vulnérabilité a été découverte dans 7-Zip, permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
@@ -290,7 +346,7 @@
                     <!-- Article 6 -->
                     <div class="article-card fade-in-text">
                         <h3>DeepSeek : Fuite de données</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Janvier 2025</p>
                         <p class="article-summary">Base de données non protégée exposant les conversations des utilisateurs de l'IA DeepSeek.</p>
                         <div class="article-details">
                             <p>DeepSeek, une IA chinoise rivalisant avec ChatGPT, a suspendu les nouvelles inscriptions après une cyberattaque DDoS massive visant ses serveurs.</p>
@@ -301,7 +357,7 @@
                     <!-- Article 7 -->
                     <div class="article-card fade-in-text">
                         <h3>Risque des capteurs de lumière</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Janvier 2025</p>
                         <p class="article-summary">Les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité.</p>
                         <div class="article-details">
                             <p>Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents pourraient être exploités pour capturer des images des interactions tactiles.</p>
@@ -312,7 +368,7 @@
                     <!-- Article 8 -->
                     <div class="article-card fade-in-text">
                         <h3>Extensions malveillantes VS Code</h3>
-                        <p class="article-date">Janvier 2024</p>
+                        <p class="article-date">Janvier 2025</p>
                         <p class="article-summary">Des extensions malveillantes ciblent les développeurs sur Visual Studio Code.</p>
                         <div class="article-details">
                             <p>Des chercheurs en cybersécurité ont découvert une campagne de pirates informatiques ciblant les développeurs via des extensions malveillantes sur la marketplace de Visual Studio Code.</p>
