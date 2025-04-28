@@ -5,14 +5,6 @@ Veille Technologique
 Thème choisit : Cybersécurité : nouvelles techniques de hacking et nouveaux dispositifs pour renforcer les systèmes informatiques
 
 Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/subscribe/  https://github.com/TalEliyahu/awesome-security-newsletters
-<!-- Article 12 -->
-                    <div class="article-card fade-in-text">
-                        <h3>Morocco Investigates Social Security Agency Data Leak</h3>
-                        <p class="article-date">Avril 2025</p>
-                        <p class="article-summary">Une faille de sécurité a valu la diffusion d'informations sensibles sur Telegram provenant de la sécurité sociale au Maroc.</p>
-                        <div class="article-details">
-                            <p>Initial investigations conducted by the Moroccan National Social Security Fund (CNSS) revealed that its IT systems were the target of a series of cyberattacks in which the threat actor "aimed at circumventing security measures," ultimately leading to the leak of the agency's data, according to a CNSS press release.
-
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
