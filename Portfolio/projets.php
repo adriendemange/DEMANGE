@@ -12,6 +12,25 @@
                 color: white;
                 font-family: Arial, sans-serif;
                 min-height: 100vh;
+                font-size: 16px;
+            }
+
+            /* Augmentation de la taille du texte pour les éléments principaux */
+            p, li, .card p, .project-description, .module-description {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            h2, .card h2, .section-title {
+                font-size: 1.8rem;
+            }
+
+            h3, .project-title, .module-title {
+                font-size: 1.3rem;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
             }
 
             /* Style de la navbar */
@@ -39,7 +58,7 @@
             .nav-link {
                 color: #e0e0e0;
                 text-decoration: none;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 padding: 0.5rem 1rem;
                 transition: all 0.3s ease;
                 border-radius: 4px;
@@ -90,7 +109,7 @@
             .section-title {
                 color: #4a90e2;
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 margin-bottom: 2rem;
                 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             }
@@ -118,13 +137,13 @@
 
             .module-title {
                 color: #4a90e2;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 margin-bottom: 1rem;
             }
 
             .module-description {
                 color: #e0e0e0;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 line-height: 1.5;
             }
 
@@ -154,7 +173,7 @@
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
 
             .toggle-button, .execute-button, .clear-button {
@@ -165,6 +184,7 @@
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background 0.3s ease;
+                font-size: 1.1rem;
             }
 
             .toggle-button:hover, .execute-button:hover, .clear-button:hover {
@@ -187,6 +207,7 @@
                 height: 300px;
                 overflow-y: auto;
                 margin: 1rem 0;
+                font-size: 1.1rem;
             }
 
             .terminal-input {
@@ -197,6 +218,7 @@
                 width: 100%;
                 margin: 1rem 0;
                 border-radius: 5px;
+                font-size: 1.1rem;
             }
 
             /* Style des projets */
@@ -231,7 +253,7 @@
 
             .project-title {
                 color: #4a90e2;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 margin-bottom: 1rem;
             }
 
@@ -239,6 +261,7 @@
                 color: #e0e0e0;
                 margin-bottom: 1rem;
                 line-height: 1.6;
+                font-size: 1.1rem;
             }
 
             .project-link {
@@ -249,6 +272,7 @@
                 border-radius: 5px;
                 text-decoration: none;
                 transition: all 0.3s ease;
+                font-size: 1.1rem;
             }
 
             .project-link:hover {
@@ -274,22 +298,28 @@
                 <img src="Img/hecten_image.png" width="180" alt="HECTEN" class="hecten-logo" style="border-radius: 5px;">
             </a>
             <h2 class="fade-in-text">Les modules étudiés en BTS :</h2>
-            <ul class="fade-in-text">
-                <li>Mathématiques Physique-Chimie</li>
-                <li>Cybersécurité</li>
-                <li>Programmation informatique</li>
-                <li>Base de données et gestion de projets</li>
-                <li>Administration et systèmes réseaux</li>
-                <li>Réseau informatique</li>
+            <ul class="fade-in-text" style="line-height: 2.5; margin-bottom: 40px; padding-left: 20px;">
+                <li style="margin-bottom: 10px;">Mathématiques Physique-Chimie</li>
+                <li style="margin-bottom: 10px;">Cybersécurité</li>
+                <li style="margin-bottom: 10px;">Programmation informatique</li>
+                <li style="margin-bottom: 10px;">Base de données et gestion de projets</li>
+                <li style="margin-bottom: 10px;">Administration et systèmes réseaux</li>
+                <li style="margin-bottom: 10px;">Réseau informatique</li>
             </ul>
-            <h2 class="description_projet_1">Red Team OSINT : </h2>
-            <div class="description_projet_1_p" style="margin-bottom: 30px; margin-top: 20px;">
-                <p class="blue" style="margin-bottom: 5px;"> Recherche d'informations sensibles sur Hackaday </p>
-                <p class="blue" style="max-width: 700px; word-wrap: break-word; margin-bottom: 20px;"> Utilisation de <b>SpiderFoot</b>, <b>WhoIs</b>, <b>Shodan</b>, <b>TheHarvester</b> </p>
+            
+            <div style="display: flex; justify-content: flex-end; margin-top: -20px; margin-right: 50px;">
+                <div style="text-align: right;" class="fade-in-text">
+                    <h2 class="description_projet_1">Red Team OSINT : </h2>
+                    <div class="description_projet_1_p" style="margin-bottom: 30px; margin-top: 20px;">
+                        <p class="blue" style="margin-bottom: 5px;"> Recherche d'informations sensibles sur l'entreprise ciblée : Hackaday</p>
+                        <p class="blue" style="max-width: 700px; word-wrap: break-word; margin-bottom: 20px;"> Utilisation de <b>SpiderFoot</b>, <b>WhoIs</b>, <b>Shodan</b>, <b>TheHarvester</b> </p>
+                        <p class="blue" style="font-style: italic; margin-top: 15px;">Ce TP de Red Team OSINT est l'un des projets que j'ai le plus apprécié réaliser pendant ma formation. Il m'a permis d'explorer des techniques avancées de recherche d'informations et de comprendre l'importance de la sécurité des données.</p>
+                    </div>
+                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/CYBERSECURITE_FANGNON" >
+                        <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint" style="border-radius: 10px;">
+                    </a>
+                </div>
             </div>
-            <a href="https://github.com/adriendemange/DEMANGE/tree/main/CYBERSECURITE_FANGNON" >
-                <img src="Img/projet_osint.png" width="700" alt="Projet OSINT" class="positionned-image-osint" style="border-radius: 10px;">
-            </a>
 
            
 
@@ -349,6 +379,8 @@
             </script>
         
             <div class="terminal-container" style="margin-top: 200px; margin-left: 200px;">
+                <h2 style="color: #4a90e2; text-align: center; margin-bottom: 20px;">Terminal de Test de Projets</h2>
+                <p style="color: #e0e0e0; text-align: center; margin-bottom: 30px;">Utilisez ce terminal pour tester et exécuter mes projets de programmation directement sur ce site web. Sélectionnez un projet dans le menu déroulant et suivez les instructions à l'écran. <strong>Cliquer sur Exécuter afin de lancer le code !</strong></p>
                 <div class="controls">
                     <select id="projectSelector" style="padding: 8px; margin-right: 10px; border-radius: 4px;">
                         <option value="projet1">Vérification Majeur</option>
@@ -613,56 +645,76 @@
             </style>
         
             <div class="projects-section" style="margin-top: 50px;">
-                <h2 style="color: yellow; width: 100%;">Mes Projets</h2>
-                <div class="project-card">
-                    <h3>Filius/Cisco Packet Tracer</h3>
-                    <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>ZooTickoon</h3>
-                    <p>Mise en place d'un site web à propos d'un Zoo.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>TinyCar</h3>
-                    <p>Programmation en JAVA / Python permettant de gérer un panier d'achat.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/JAVA/TinyCar/TinyCar/src/fr/hecten" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>Système Windows : Droits, fichiers, ...</h3>
-                    <p>Mise en place d'un portail d'authentification pour accéder à une page web.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/SYSTEME_T" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>Code source du PortFolio </h3>
-                    <p>Programmation en HTML / CSS de ce PortFolio puis mise en ligne avec AlwaysData.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/Portfolio" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>Publication du PortFolio avec AlwaysData</h3>
-                    <p>Configuration d'un serveur afin d'héberger notre site Web.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" target="_blank">Voir le projet</a>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <h2 style="color: #4a90e2; text-align: center; margin-bottom: 20px;">Projets Développement</h2>
+                        <div class="project-card">
+                            <h3>ZooTickoon</h3>
+                            <p>Mise en place d'un site web à propos d'un Zoo.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>TinyCar</h3>
+                            <p>Programmation en Java / Python permettant de gérer un panier d'achat.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/JAVA/TinyCar/TinyCar/src/fr/hecten" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Code source du PortFolio </h3>
+                            <p>Programmation en HTML / CSS de ce PortFolio puis mise en ligne avec AlwaysData.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/Portfolio" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>EasyLine</h3>
+                            <p>Application Java de gestion de lignes de production et de suivi des commandes.</p>
+                            <a href="#" target="_blank">Voir le projet</a>
+                        </div>
+                    </div>
                     
-                </div>
-                <div class="project-card">
-                    <h3>Publication d'une documentation pour ACI Technology</h3>
-                    <p>Document expliquant la réalisation d'un onboarding pour l'entreprise JICAP Performance (client de ACI Technology).</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projets_ACI/" target="_blank">Voir le projet</a>
-                    
-                </div>
-                <div class="project-card">
-                    <h3>Filius/Cisco Packet Tracer</h3>
-                    <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/Filius" target="_blank">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>ZooTickoon</h3>
-                    <p>Mise en place d'un site web à propos d'un Zoo.</p>
-                    <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" target="_blank">Voir le projet</a>
+                    <div style="flex: 1; margin-left: 20px;">
+                        <h2 style="color: #4a90e2; text-align: center; margin-bottom: 20px;">Projets Système et Réseaux</h2>
+                        <div class="project-card">
+                            <h3>Filius/ Cisco Packet Tracer</h3>
+                            <p>Mise en place d'un réseau sur Filius et Cisco Packet Tracer.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Système Windows : Droits, fichiers, ...</h3>
+                            <p>Mise en place d'un portail d'authentification pour accéder à une page web.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/SYSTEME_T" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Publication du PortFolio avec AlwaysData</h3>
+                            <p>Configuration d'un serveur afin d'héberger notre site Web.</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Publication d'une documentation pour ACI Technology, mon entreprise d'apprentissage</h3>
+                            <p>Document expliquant la réalisation d'un onboarding pour l'entreprise JICAP Performance (client de ACI Technology).</p>
+                            <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projets_ACI/" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Projet Samba (serveur de fichier)</h3>
+                            <p>Configuration d'un serveur de fichiers Samba pour le partage de ressources dans un environnement réseau.</p>
+                            <a href="#" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Booter un Windows et configurer un nouveau poste</h3>
+                            <p>Installation et configuration d'un système d'exploitation Windows sur un nouveau poste de travail.</p>
+                            <a href="#" target="_blank">Voir le projet</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Automatiser une tâche planifiée pour la société Briand</h3>
+                            <p>Création d'un script d'automatisation pour une tâche planifiée au sein de la société Briand.</p>
+                            <a href="#" target="_blank">Voir le projet</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <footer style="text-align: center; padding: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <a href="mentions_legales.php" style="color: #4a90e2; text-decoration: none; font-size: 0.9rem;">Mentions Légales</a>
+        </footer>
         
         <script>
             // Script pour cacher/montrer la navbar au scroll

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Page index de Adrien</title>
+        <title>PortFolio de Adrien</title>
         <link href="index.css" rel="stylesheet" type="text/css" />
         <style>
             body {
@@ -11,6 +11,23 @@
                 background: #111111;
                 color: white;
                 font-family: Arial, sans-serif;
+                font-size: 16px;
+            }
+
+            @keyframes fadeInSlide {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animated-title {
+                animation: fadeInSlide 1s ease-out forwards;
+                opacity: 0;
             }
 
             .video-background {
@@ -54,7 +71,7 @@
             .nav-link {
                 color: #e0e0e0;
                 text-decoration: none;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 padding: 0.3rem 0.8rem;
                 transition: all 0.3s ease;
                 border-radius: 4px;
@@ -93,7 +110,7 @@
                 color: #4a90e2;
                 margin-bottom: 1.5rem;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
 
             /* Style pour le titre principal */
@@ -107,7 +124,7 @@
             }
 
             .role {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
                 color: #e0e0e0;
                 margin-bottom: 1.5rem;
                 font-weight: 600;
@@ -127,7 +144,7 @@
                 color: #4a90e2;
                 padding: 0.5rem 1rem;
                 border-radius: 20px;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 border: 1px solid rgba(74, 144, 226, 0.3);
                 transition: all 0.3s ease;
             }
@@ -141,7 +158,7 @@
             .skill-name {
                 color: #e0e0e0;
                 margin-bottom: 8px;
-                font-size: 16px;
+                font-size: 1.2rem;
                 font-weight: bold;
             }
 
@@ -169,7 +186,7 @@
                 top: 50%;
                 transform: translateY(-50%);
                 color: #e0e0e0;
-                font-size: 12px;
+                font-size: 0.9rem;
                 z-index: 1;
                 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
             }
@@ -200,11 +217,32 @@
             .timeline-item h3 {
                 color: #4a90e2;
                 margin-bottom: 0.5rem;
+                font-size: 1.3rem;
             }
 
             .timeline-item p {
                 color: #e0e0e0;
                 margin: 0.5rem 0;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            /* Augmentation de la taille du texte pour les éléments principaux */
+            p, li, .card p, .timeline-item p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            h2, .card h2 {
+                font-size: 1.8rem;
+            }
+
+            h3, .timeline-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .progress-text {
+                font-size: 0.9rem;
             }
         </style>
     </head>
@@ -227,6 +265,7 @@
             <div class="hero-content">
                 <div class="typing-container">
                     <p class="role">Expert en Cybersécurité en devenir</p>
+                    <p class="role animated-title">PortFolio de Adrien D.</p>
                     <div class="hero-tags">
                         <span class="tag">Sécurité</span>
                         <span class="tag">Réseaux</span>
@@ -242,13 +281,23 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <h3>BTS SIO SISR - HECTEN</h3>
-                        <p>2024 - Présent</p>
+                        <p>Septembre 2024 - Présent</p>
                         <p>Formation en alternance spécialisée en solutions d'infrastructure, systèmes et réseaux</p>
                     </div>
                     <div class="timeline-item">
                         <h3>ACI Technology</h3>
-                        <p>Alternant depuis 2024</p>
+                        <p>Alternant depuis septembre 2024</p>
                         <p>Expérience professionnelle en entreprise</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>CY Tech</h3>
+                        <p>2022 - 2024</p>
+                        <p>Mathématiques Physique Informatique</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Lycée Jean-Perrin</h3>
+                        <p>2020 - 2022</p>
+                        <p>Bac S. Mathématiques Physique</p>
                     </div>
                 </div>
             </div>
@@ -258,7 +307,7 @@
                 <h2>Compétences Techniques</h2>
                 <div class="skills-container">
                     <div class="skill-item">
-                        <div class="skill-name">Réseau & Système</div>
+                        <div class="skill-name">Réseau (Cisco Packet Tracer, VLAN, DHCP, DNS, etc.)</div>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 40%">
                                 <span class="progress-text">40%</span>
@@ -266,7 +315,7 @@
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Windows</div>
+                        <div class="skill-name">Windows (Active Directory, GPO, Failles, PowerShell)</div>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 40%">
                                 <span class="progress-text">40%</span>
@@ -274,7 +323,7 @@
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Linux</div>
+                        <div class="skill-name">Linux (Serveur Samba, Gestion de droits, SSH, etc.)</div>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 50%">
                                 <span class="progress-text">50%</span>
@@ -282,7 +331,7 @@
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Kali Linux - Test de Pénétration</div>
+                        <div class="skill-name">Kali Linux - Test de Pénétration (Nmap, metasploit, Wireshark, etc.)</div>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 40%">
                                 <span class="progress-text">40%</span>
@@ -297,7 +346,7 @@
                 <h2>Compétences en Développement</h2>
                 <div class="skills-container">
                     <div class="skill-item">
-                        <div class="skill-name">HTML / PHP / Python</div>
+                        <div class="skill-name">HTML/CSS</div>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 35%">
                                 <span class="progress-text">35%</span>
@@ -305,24 +354,44 @@
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">C</div>
+                        <div class="skill-name">Langage C</div>
                         <div class="skill-progress">
-                            <div class="progress-bar" style="width: 65%">
-                                <span class="progress-text">65%</span>
+                            <div class="progress-bar" style="width: 40%">
+                                <span class="progress-text">40%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Active Directory</div>
+                        <div class="skill-name">JavaScript </div>
                         <div class="skill-progress">
-                            <div class="progress-bar" style="width: 50%">
-                                <span class="progress-text">50%</span>
+                            <div class="progress-bar" style="width: 22%">
+                                <span class="progress-text">22%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 25%">
+                                <span class="progress-text">25%</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="skill-item">
+                        <div class="skill-name">PowerShell</div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 15%">
+                                <span class="progress-text">15%</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        
+        <footer style="text-align: center; padding: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <a href="mentions_legales.php" style="color: #4a90e2; text-decoration: none; font-size: 0.9rem;">Mentions Légales</a>
+        </footer>
         
         <script>
             // Script pour cacher/montrer la navbar au scroll

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Page veille technologique de Adrien</title>
         <link href="index.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <style>
             body {
                 margin: 0;
@@ -134,6 +135,37 @@
                 margin-bottom: 0.5rem;
             }
 
+            .article-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+
+            .article-meta-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .article-meta-item i {
+                margin-right: 0.5rem;
+                color: #4a90e2;
+            }
+
+            .article-source {
+                display: inline-block;
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+
+            .article-source i {
+                margin-right: 0.5rem;
+                color: #4a90e2;
+            }
+
             .article-summary {
                 color: #e0e0e0;
                 margin-bottom: 1rem;
@@ -213,6 +245,36 @@
                         <li>Bonnes pratiques en sécurité informatique</li>
                         <li>Évolutions des systèmes d'exploitation</li>
                     </ul>
+                    <p>Mots-clés utilisés pour ma veille :</p>
+                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <ul>
+                                <li>Faille de sécurité</li>
+                                <li>Exploit</li>
+                                <li>Vulnérabilité</li>
+                                <li>Hack</li>
+                                <li>Piratage</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1; margin-right: 10px;">
+                            <ul>
+                                <li>Malware</li>
+                                <li>Ransomware</li>
+                                <li>APT (Advanced Persistent Threat)</li>
+                                <li>Zero-day</li>
+                                <li>Data breach</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <ul>
+                                <li>Phishing</li>
+                                <li>Social engineering</li>
+                                <li>Penetration testing</li>
+                                <li>Red team</li>
+                                <li>Blue team</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Carte Sources -->
@@ -237,11 +299,25 @@
                     <div class="article-card fade-in-text">
                         <h3>Morocco Investigates Social Security Agency Data Leak</h3>
                         <p class="article-date">Avril 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Kristina Beek</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Avril 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Une faille de sécurité a valu la diffusion d'informations sensibles sur Telegram provenant de la sécurité sociale au Maroc.</p>
                         <div class="article-details">
                             <p>Initial investigations conducted by the Moroccan National Social Security Fund (CNSS) revealed that its IT systems were the target of a series of cyberattacks in which the threat actor "aimed at circumventing security measures," ultimately leading to the leak of the agency's data, according to a CNSS press release.
 
 The CNSS is a public institution responsible for managing the social security plans for employees in Morocco's private sector.</p>
+                        </div>
+                        <div class="article-source">
+                            <i class="fas fa-link"></i>
+                            <span>Source: Dark Reading</span>
                         </div>
                         <a href="https://www.darkreading.com/threat-intelligence/morocco-investigates-social-security-agency-data-leak" class="read-more">Lire la suite</a>
                     </div>
@@ -250,6 +326,16 @@ The CNSS is a public institution responsible for managing the social security pl
                     <div class="article-card fade-in-text">
                         <h3>Paper Werewolf Deploys PowerModul Implant in Targeted Cyberattacks on Russian Sectors</h3>
                         <p class="article-date">Avril 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Ravie Lakshmanan</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Avril 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">L'organisation Paper Werewolf est une menace pour la Russie part ses nombreuses attaques dans le pays.</p>
                         <div class="article-details">
                             <p>The threat actor known as Paper Werewolf has been observed exclusively targeting Russian entities with a new implant called PowerModul.
@@ -258,12 +344,26 @@ The activity, which took place between July and December 2024, singled out organ
 
 Paper Werewolf, also known as GOFFEE, is assessed to have conducted at least seven campaigns since 2022, according to BI.ZONE, with the attacks mainly aimed at government, energy, financial, media, and other organizations.</p>
                         </div>
+                        <div class="article-source">
+                            <i class="fas fa-link"></i>
+                            <span>Source: The Hacker News</span>
+                        </div>
                         <a href="https://thehackernews.com/2025/04/paper-werewolf-deploys-powermodul.html" class="read-more">Lire la suite</a>
                     </div>
 				<!-- Article 10 -->
                     <div class="article-card fade-in-text">
                         <h3>Incomplete Patch in NVIDIA Toolkit Leaves CVE-2024-0132 Open to Container Escapes - TheHackerNews</h3>
                         <p class="article-date">Avril 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Ravie Lakshmanan</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Avril 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Vulnérabilité découverte pour le logiciel "NVIDIA Container Toolkit"</p>
                         <div class="article-details">
                             <p>Cybersecurity researchers have detailed a case of an incomplete patch for a previously addressed security flaw impacting the NVIDIA Container Toolkit that, if successfully exploited, could put sensitive data at risk.
@@ -277,6 +377,16 @@ The original vulnerability CVE-2024-0132 (CVSS score: 9.0) is a Time-of-Check Ti
                     <div class="article-card fade-in-text">
                         <h3>Chrome 136 fixes 20-year browser history privacy risk - BleepingComputer</h3>
                         <p class="article-date">Avril 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Bill Toulas</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Avril 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Changement de la part de Chrome sur la confidentialité de l'utilisateur.</p>
                         <div class="article-details">
                             <p>Google is fixing a long-standing privacy issue that, for years, enabled websites to determine users' browsing history through the previously visited links.
@@ -291,6 +401,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Faille FortiGate</h3>
                         <p class="article-date">Mars 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Mars 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants.</p>
                         <div class="article-details">
                             <p>Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu.</p>
@@ -303,6 +423,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Clone2Leak : Vulnérabilités Git</h3>
                         <p class="article-date">Mars 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Mars 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Découverte de vulnérabilités dans GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
                         <div class="article-details">
                             <p>Une série de vulnérabilités appelées Clone2Leak a été découverte dans des outils liés à Git, comme GitHub Desktop, Git LFS, et GitHub Credential Manager.</p>
@@ -314,6 +444,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Windows RID Hijacking</h3>
                         <p class="article-date">Mars 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Mars 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Le groupe Andariel utilise le RID hijacking pour créer des comptes admin cachés sur Windows.</p>
                         <div class="article-details">
                             <p>Le groupe de pirates nord-coréen Andariel, affilié à Lazarus, utilise une technique appelée RID hijacking pour élever discrètement les privilèges des comptes Windows.</p>
@@ -325,6 +465,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Faille ChatGPT DDoS</h3>
                         <p class="article-date">Fevrier 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Fevrier 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Le robot d'indexation ChatGPT-User peut être exploité pour des attaques DDoS.</p>
                         <div class="article-details">
                             <p>Une vulnérabilité a été découverte dans le robot d'indexation ChatGPT-User, utilisé pour parcourir le Web, qui pourrait être exploité pour lancer des attaques DDoS.</p>
@@ -336,6 +486,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Faille 7-Zip Windows</h3>
                         <p class="article-date">Janvier 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Janvier 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Vulnérabilité permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
                         <div class="article-details">
                             <p>Une vulnérabilité a été découverte dans 7-Zip, permettant de contourner la protection Mark of the Web (MotW) de Windows.</p>
@@ -347,6 +507,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>DeepSeek : Fuite de données</h3>
                         <p class="article-date">Janvier 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Janvier 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Base de données non protégée exposant les conversations des utilisateurs de l'IA DeepSeek.</p>
                         <div class="article-details">
                             <p>DeepSeek, une IA chinoise rivalisant avec ChatGPT, a suspendu les nouvelles inscriptions après une cyberattaque DDoS massive visant ses serveurs.</p>
@@ -358,6 +528,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Risque des capteurs de lumière</h3>
                         <p class="article-date">Janvier 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Alex Shipps</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Janvier 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité.</p>
                         <div class="article-details">
                             <p>Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents pourraient être exploités pour capturer des images des interactions tactiles.</p>
@@ -369,6 +549,16 @@ The system displays this color change regardless of which site they were on when
                     <div class="article-card fade-in-text">
                         <h3>Extensions malveillantes VS Code</h3>
                         <p class="article-date">Janvier 2025</p>
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Florian BURNEL</span>
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Janvier 2025</span>
+                            </div>
+                        </div>
                         <p class="article-summary">Des extensions malveillantes ciblent les développeurs sur Visual Studio Code.</p>
                         <div class="article-details">
                             <p>Des chercheurs en cybersécurité ont découvert une campagne de pirates informatiques ciblant les développeurs via des extensions malveillantes sur la marketplace de Visual Studio Code.</p>
@@ -378,6 +568,10 @@ The system displays this color change regardless of which site they were on when
                 </div>
             </div>
         </div>
+        
+        <footer style="text-align: center; padding: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <a href="mentions_legales.php" style="color: #4a90e2; text-decoration: none; font-size: 0.9rem;">Mentions Légales</a>
+        </footer>
         
         <script>
             // Script pour cacher/montrer la navbar au scroll
