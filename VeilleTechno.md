@@ -7,6 +7,9 @@ Thème choisit : Cybersécurité : nouvelles techniques de hacking et nouveaux d
 Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/subscribe/  https://github.com/TalEliyahu/awesome-security-newsletters
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
+IT Connect 22/06/25 : https://www.it-connect.fr/discord-faille-dans-le-systeme-invitation-exploitee-pour-delivrer-des-malwares/ : Discord : une faille dans le système d’invitation exploitée pour délivrer des malwares !
+
+
 
 
 MIT https://news.mit.edu/2024/study-smart-devices-ambient-light-sensors-pose-imaging-privacy-risk-0129  -> Étude : les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité des images  -> 
