@@ -8,6 +8,9 @@ Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/su
 Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
+Le FBI alerte : plus d’un million d’appareils sont infectés par le malware BADBOX 2.0 ! -> https://www.it-connect.fr/le-fbi-alerte-plus-1-million-appareils-sont-infectes-par-le-malware-badbox-2-0/
+
+
 
 IT Connect : Plus de 80 000 comptes Microsoft Entra ID ciblés par des attaques par pulvérisation de mots de passe !  -   https://www.it-connect.fr/plus-de-80-000-comptes-microsoft-entra-id-attaque-par-pulverisation-de-mots-de-passe/
 
