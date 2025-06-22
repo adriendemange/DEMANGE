@@ -9,6 +9,9 @@ Article : (Date la plus récente en haut du fichier)
 ex -> titre source (lien) date résumé 
 
 
+IT Connect : Plus de 80 000 comptes Microsoft Entra ID ciblés par des attaques par pulvérisation de mots de passe !  -   https://www.it-connect.fr/plus-de-80-000-comptes-microsoft-entra-id-attaque-par-pulverisation-de-mots-de-passe/
+
+
 
 
 IT Connect 22/06/25 : https://www.it-connect.fr/discord-faille-dans-le-systeme-invitation-exploitee-pour-delivrer-des-malwares/ : Discord : une faille dans le système d’invitation exploitée pour délivrer des malwares !
