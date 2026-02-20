@@ -1,0 +1,9 @@
+#Adrien DEMANGE
+#3 Septembre 2024
+#Projet Tiny Car Python
+
+prixht=int(input("Saisir Prix Hors Taxe:"))
+tva=float(input("Saisir la TVA:"))
+qte=int(input("Saisir la quantité de produits:"))
+ttc=prixht*(tva+1)*qte
+print("Voici le TTC :", ttc)
