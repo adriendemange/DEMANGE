@@ -1,6 +1,0 @@
-15/11 
-
-windows + r -> dxdiag -> a propos de votre pc en amélioré 
-
-
-

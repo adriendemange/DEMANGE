@@ -1,5 +1,0 @@
-GET Method: Sends data in the URL, making it visible and bookmarkable but limited by URL length constraints. It’s suitable for simple requests or searches where data privacy is not critical.
-
-
-
-POST Method: Transmits data in the HTTP body, hiding it from the URL. This method is better for secure or sensitive information (e.g., passwords), as it keeps the data private and allows more data to be sent.
