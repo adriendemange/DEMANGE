@@ -1,0 +1,191 @@
+
+!
+! Last configuration change at 13:48:56 UTC Tue Mar 31 2026
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service unsupported-transceiver
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+no logging console
+!
+no aaa new-model
+switch 1 provision c1000-24t-4g-l
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1877459712
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1877459712
+ revocation-check none
+ rsakeypair TP-self-signed-1877459712
+!
+!
+crypto pki certificate chain TP-self-signed-1877459712
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31383737 34353937 3132301E 170D3235 31303033 30373035 
+  32365A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 38373734 
+  35393731 3230819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  810090E3 984AB36E 254EA197 07F47E75 85971BCC 132E4106 AEAAA5E0 56F3CDFC 
+  CB0CE797 E5351FE7 FF62FD7E D338E98F 0898FDF9 8CE4D498 9F4F2CB8 05B0A06B 
+  64266F71 23818CDA EDD13A7E 8FF77FAD 2D0411B5 71741D36 017E7357 4F231003 
+  87F0C40D 5EEA8D43 70396FE7 44182CA5 88D34AE6 76319D79 2BAB9B48 B0BD7449 
+  6A6B0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603 
+  551D2304 18301680 14DE57F6 AA3B7571 7E30BB7E 1860FEDA EA0DB833 9C301D06 
+  03551D0E 04160414 DE57F6AA 3B75717E 30BB7E18 60FEDAEA 0DB8339C 300D0609 
+  2A864886 F70D0101 05050003 81810025 A62CAAB6 B6DA0B6B F3352C69 47DF5BDC 
+  3ADD8159 A0C1D6D0 D7E88339 8F77FB82 5524F913 41C8C3A9 79A3D80D 18B268A9 
+  3433E644 EE953A80 5E5D2ECF C4B1A65D 2E10662D C17411B8 27DAEA33 A2711FA4 
+  CFF6180F D0947FB4 1AE2C377 EAEA0E90 8F79E8C7 09CE64EE 0B34B9BC C1EBBEFD 
+  7AA65BF3 283678BD 478C2011 5E5EEE
+  	quit
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+no errdisable detect cause gbic-invalid
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ description bond0-Proxmox
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast edge
+!
+interface GigabitEthernet1/0/1
+!
+interface GigabitEthernet1/0/2
+!
+interface GigabitEthernet1/0/3
+ description proxmox-nic1
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast edge
+ channel-group 1 mode active
+!
+interface GigabitEthernet1/0/4
+ description proxmox-nic2
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast edge
+ channel-group 1 mode active
+!
+interface GigabitEthernet1/0/5
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast edge
+ channel-group 1 mode active
+!
+interface GigabitEthernet1/0/6
+ switchport access vlan 101
+ switchport mode access
+ spanning-tree portfast edge
+ channel-group 1 mode active
+!
+interface GigabitEthernet1/0/7
+!
+interface GigabitEthernet1/0/8
+!
+interface GigabitEthernet1/0/9
+!
+interface GigabitEthernet1/0/10
+!
+interface GigabitEthernet1/0/11
+!
+interface GigabitEthernet1/0/12
+ no power efficient-ethernet
+!
+interface GigabitEthernet1/0/13
+ switchport access vlan 101
+ switchport mode access
+!
+interface GigabitEthernet1/0/14
+!
+interface GigabitEthernet1/0/15
+ switchport access vlan 61
+ switchport mode access
+!
+interface GigabitEthernet1/0/16
+ switchport access vlan 61
+ switchport mode access
+!
+interface GigabitEthernet1/0/17
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+!
+interface GigabitEthernet1/0/20
+!
+interface GigabitEthernet1/0/21
+!
+interface GigabitEthernet1/0/22
+!
+interface GigabitEthernet1/0/23
+ switchport trunk allowed vlan 1-4092
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/24
+ description Borne Aruba
+ switchport trunk allowed vlan 1,61,101,121,131
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/25
+ description vers routeur baie 2 gig0/0/3
+ switchport trunk allowed vlan 1,61,101,121,131
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/26
+ switchport access vlan 101
+ switchport mode access
+!
+interface GigabitEthernet1/0/27
+ switchport access vlan 101
+ switchport mode access
+!
+interface GigabitEthernet1/0/28
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan101
+ ip address 192.168.101.2 255.255.255.0
+!
+ip default-gateway 192.168.101.1
+ip http server
+ip http banner
+ip http secure-server
+!
+!
+!
+!
+line con 0
+line vty 0 4
+ login
+ transport input none
+line vty 5 15
+ login
+ transport input none
+!
+end

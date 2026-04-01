@@ -1,0 +1,27 @@
+
+Documentation sur pfSense -> VLANs, NAT, FireWall
+Cours Active Directory en Système -> Partage fichiers, Gestion droits 
+Site Docker -> GLPI 
+IT Connect -> Liaison LDAP et GLPI 
+Maquette Cisco Packet Tracer 
+Cours de projet 
+Methode SMART 
+Diagramme de Gantt
+
+Domaine LAB :
+Administrateur
+T3ch92750@ci
+
+MDP de restauration des servic	es d'annuaire depuis SRV-FICHIERS : Admin!2026 
+GLPI : glpi
+T3ch92750@ci
+
+sync_glpi	
+qj52ro59&*
+
+SRV-FICHIERS : .\Administrateur qj52ro59&*
+
+Secret Proxmox : BVUQM6XIDNTWXHK3U6OJVXXAG4AHSQ3M
+
+LTP-LAB-01 : .\admin
+MDP : qj52ro59&*
