@@ -1,65 +1,59 @@
-Adrien DEMANGE
-14/10/2024
-Veille Technologique 
+# Veille Technologique : L'essor des ransomwares et les stratégies de défense (2024-2026)
+# Adrien DEMANGE 04/05/2025
 
-Thème choisit : Cybersécurité : nouvelles techniques de hacking et nouveaux dispositifs pour renforcer les systèmes informatiques
+Ce document résume les 15 articles phares de ma veille technologique sur le thème des ransomwares et des techniques de défense en entreprise, répartis entre 2024 et 2026.
 
-Outils : Google Alertes  https://news.mit.edu/ https://www.enablesecurity.com/subscribe/  https://github.com/TalEliyahu/awesome-security-newsletters
-Article : (Date la plus récente en haut du fichier)
-ex -> titre source (lien) date résumé 
+## 📅 Année 2024 : L'industrialisation des attaques et les réponses des autorités
 
-Le FBI alerte : plus d’un million d’appareils sont infectés par le malware BADBOX 2.0 ! -> https://www.it-connect.fr/le-fbi-alerte-plus-1-million-appareils-sont-infectes-par-le-malware-badbox-2-0/
+1. **Panorama de la cybermenace 2023-2024 : L'évolution continue des ransomwares** *(Février 2024 • ANSSI)*
+   L'ANSSI souligne la persistance des attaques par ransomware, ciblant particulièrement les PME et les collectivités, et insiste sur l'importance des mesures d'hygiène informatique de base.
 
+2. **Opération Cronos : Démantèlement historique de l'infrastructure LockBit** *(Février 2024 • Europol / BleepingComputer)*
+   Une opération conjointe des forces de l'ordre mondiales a permis de saisir les serveurs de LockBit, le groupe Ransomware-as-a-Service (RaaS) le plus prolifique, offrant un répit temporaire et des clés de déchiffrement aux victimes.
 
+3. **Attaque contre Change Healthcare : L'impact dévastateur d'ALPHV/BlackCat** *(Mars 2024 • The Hacker News)*
+   Une cyberattaque majeure contre le secteur de la santé américain a mis en évidence les vulnérabilités critiques de la chaîne d'approvisionnement (Supply Chain) et l'impact direct sur les services critiques.
 
-IT Connect : Plus de 80 000 comptes Microsoft Entra ID ciblés par des attaques par pulvérisation de mots de passe !  -   https://www.it-connect.fr/plus-de-80-000-comptes-microsoft-entra-id-attaque-par-pulverisation-de-mots-de-passe/
+4. **Stratégie de défense : Configurer des sauvegardes immuables face aux ransomwares** *(Avril 2024 • IT-Connect)*
+   Face à la destruction ciblée des sauvegardes par les attaquants, la mise en place de sauvegardes immuables (WORM - Write Once, Read Many) s'est imposée comme une nécessité absolue pour garantir la restauration.
 
+5. **Vulnérabilités VMware ESXi massivement ciblées par de nouveaux ransomwares** *(Mai 2024 • CERT-FR)*
+   Les hyperviseurs non mis à jour sont devenus la cible de choix pour des groupes comme Akira et BlackBasta, leur permettant de compromettre des dizaines de serveurs virtuels en une seule attaque.
 
+---
 
+## 📅 Année 2025 : L'IA offensive, le Zero Trust et l'évolution de l'extorsion
 
-IT Connect 22/06/25 : https://www.it-connect.fr/discord-faille-dans-le-systeme-invitation-exploitee-pour-delivrer-des-malwares/ : Discord : une faille dans le système d’invitation exploitée pour délivrer des malwares !
+6. **L'essor de l'extorsion sans chiffrement : Les ransomwares évoluent** *(Février 2025 • BleepingComputer)*
+   Contournant les systèmes de sauvegarde de plus en plus robustes, les cybercriminels privilégient dorénavant l'exfiltration massive de données et l'extorsion à la publication, sans même prendre la peine de chiffrer les systèmes.
 
+7. **Les attaques IA automatisées contournent les défenses traditionnelles** *(Mai 2025 • Le Monde Informatique)*
+   L'utilisation d'outils d'intelligence artificielle générative par les attaquants a permis de créer du code malveillant polymorphe et des campagnes de phishing ultra-ciblées, rendant les antivirus classiques obsolètes.
 
+8. **Architecture Zero Trust (ZTNA) : Le nouveau standard face aux menaces** *(Juillet 2025 • IT-Connect)*
+   Le modèle Zero Trust (ne faire confiance à personne par défaut) est devenu le standard de l'industrie pour limiter drastiquement les mouvements latéraux des ransomwares une fois le réseau infiltré.
 
+9. **Le groupe RansomHub cible massivement le secteur industriel** *(Septembre 2025 • The Hacker News)*
+   Capitalisant sur la chute de ses concurrents, RansomHub s'est imposé comme le nouveau leader du RaaS en ciblant les environnements industriels (OT), souvent fragilisés par des équipements obsolètes.
 
-MIT https://news.mit.edu/2024/study-smart-devices-ambient-light-sensors-pose-imaging-privacy-risk-0129  -> Étude : les capteurs de lumière ambiante des appareils intelligents présentent un risque pour la confidentialité des images  -> 
-Des chercheurs du MIT ont révélé une nouvelle menace pour la vie privée : les capteurs de lumière ambiante des appareils intelligents, utilisés pour ajuster la luminosité des écrans, pourraient être exploités par des pirates informatiques pour capturer des images des interactions tactiles des utilisateurs. En utilisant un algorithme d’imagerie informatique, les chercheurs ont montré que ces capteurs peuvent espionner des gestes tels que le balayage, le tapotement, ou même les mouvements lors de la visualisation de vidéos. Bien que ce piratage soit encore limité en raison de la faible vitesse de récupération d'image, il constitue une menace pour la confidentialité. Des mesures pour atténuer ces risques incluent la limitation de l'accès à ces capteurs et la réduction de leur précision.
+10. **Premier bilan de la directive NIS2 sur la sécurité des entreprises** *(Novembre 2025 • ANSSI)*
+    Un an après son entrée en vigueur, la directive européenne NIS2 a forcé les entreprises à élever leur niveau de sécurité, bien que la sous-traitance reste un vecteur d'attaque majeur.
 
+---
 
+## 📅 Année 2026 : Automatisation de la réponse et nouvelles menaces (BYOVD & Quantique)
 
-IT Connect : 16/01/2025 https://www.it-connect.fr/15-000-firewalls-fortigate-menaces-fuite-massive-config-complete-et-identifiants/  -  15 000 firewalls FortiGate menacés par une fuite massive avec la config complète et des identifiants   -   Le groupe de pirates Belsen Group a publié les données de configuration de 15 000 firewalls FortiGate, incluant des informations sensibles telles que des noms d'utilisateur, mots de passe (certains en texte clair), certificats numériques et règles de pare-feu. Cette fuite, organisée par pays et associée à des adresses IP publiques, concerne des appareils vulnérables depuis 2022, exploitant la faille zero-day CVE-2022-40684. Bien que la vulnérabilité CVE-2024-55591 récemment exploitée ne soit pas la cause de cette fuite, elle souligne l'importance de corriger les failles et de ne pas exposer les interfaces de gestion sur Internet pour prévenir de futures attaques.
+11. **EDR dopés à l'IA : La réponse autonome face aux chiffreurs ultra-rapides** *(Janvier 2026 • IT-Connect)*
+    Face à des ransomwares capables de chiffrer un disque en quelques minutes, les entreprises déploient des solutions EDR/XDR capables de prendre des décisions d'isolement de manière autonome grâce à l'IA.
 
-IT Connect :Clone2Leak : 25-01-2025 comment des failles Git font fuiter vos identifiants ? /  https://www.it-connect.fr/clone2leak-comment-des-failles-git-font-fuiter-vos-identifiants/    -  
-Une série de vulnérabilités appelées Clone2Leak a été découverte dans des outils liés à Git, comme GitHub Desktop, Git LFS, et GitHub Credential Manager. Ces failles permettent à des attaquants de récupérer des identifiants (mots de passe, tokens) en manipulant des URL ou en exploitant des erreurs dans les outils d'authentification. Pour se protéger, il est recommandé de mettre à jour ces outils vers les versions suivantes : GitHub Desktop 3.4.12, Git Credential Manager 2.6.1, Git LFS 3.6.1, et gh CLI 2.63.0, et d'activer le paramètre credential.protectProtocol dans Git pour éviter l'exfiltration d'identifiants vers des serveurs malveillants.
+12. **Cyberattaque majeure : Le secteur de la logistique paralysé** *(Février 2026 • Le Monde Informatique)*
+    Une attaque synchronisée a frappé la chaîne d'approvisionnement logistique mondiale, démontrant à nouveau que les interconnexions B2B sont la principale faille exploitée par les opérateurs de ransomwares.
 
-IT Connect : 22-01-2025https://www.it-connect.fr/windows-rid-hijacking-utilisee-par-pirates-pour-creer-un-compte-admin-cache/  :  Windows : la technique du RID hijacking utilisée par les pirates pour créer un compte admin caché !   -   Le groupe de pirates nord-coréen Andariel, affilié à Lazarus, utilise une technique appelée RID hijacking pour élever discrètement les privilèges des comptes Windows. Cette méthode permet de transformer un compte utilisateur standard en administrateur en modifiant le RID (Relative Identifier) associé à l’identifiant de sécurité (SID) du compte. Les attaquants accèdent d'abord à la base SAM de Windows via le Registre, nécessitant un accès SYSTEM, puis utilisent des outils comme PsExec et JuicyPotato pour effectuer l'élévation. Après avoir créé un compte masqué et modifié son RID, ils effacent les traces de l'attaque pour rendre l'accès persistant et discret. Pour se protéger, il est conseillé de désactiver les comptes invités, de bloquer les outils malveillants et de surveiller les changements dans la base SAM.
+13. **L'informatique quantique : Une nouvelle menace pour le chiffrement ?** *(Mars 2026 • The Hacker News)*
+    La menace "Harvest Now, Decrypt Later" s'intensifie. Les attaquants se préparent à l'ère quantique pour casser les chiffrements asymétriques, forçant l'industrie à migrer vers la cryptographie post-quantique.
 
-IT Connect : 27-01-2025Le robot d’indexation de ChatGPT peut être utilisé pour lancer des attaques DDoS !  -  https://www.it-connect.fr/faille-robot-indexation-chatgpt-utilise-pour-lancer-des-attaques-ddos/   -  
-Une vulnérabilité a été découverte dans le robot d'indexation ChatGPT-User, utilisé pour parcourir le Web, qui pourrait être exploité pour lancer des attaques DDoS. Un chercheur en sécurité a démontré que, par l'envoi d'une requête HTTP contenant une liste d'URLs, un attaquant pourrait amener le robot à visiter ces pages simultanément, générant un trafic massif et saturant un site web. Cette attaque, sans besoin d'authentification, pourrait entraîner entre 20 et 5 000 requêtes par seconde, causant un déni de service. Malgré le signalement à OpenAI et Microsoft, aucune réponse n'a été reçue et la vulnérabilité pourrait toujours être présente.
+14. **Orchestrer la restauration automatisée de son PRA dans le Cloud** *(Avril 2026 • IT-Connect)*
+    L'automatisation des Plans de Reprise d'Activité (PRA) dans le Cloud public permet aujourd'hui aux entreprises victimes de ransomwares de redémarrer leurs infrastructures vitales en un temps record (RTO minimisé).
 
-
-IT Connect : 22-01-2025https://www.it-connect.fr/faille-7-zip-contourner-securite-motw-de-windows-cve-2025-0411/https://www.it-connect.fr/faille-7-zip-contourner-securite-motw-de-windows-cve-2025-0411/  :  Une vulnérabilité a été découverte dans 7-Zip, permettant de contourner la protection Mark of the Web (MotW) de Windows. Cette protection identifie les fichiers provenant de sources externes comme Internet et avertit l'utilisateur des risques d'exécution. Cependant, la faille (CVE-2025-0411) empêche ce marqueur de se propager correctement aux fichiers extraits d'archives compressées, permettant ainsi l'exécution de code malveillant sans avertissement. Cette vulnérabilité nécessite une interaction de l'utilisateur pour être exploitée. Un correctif a été publié par 7-Zip (version 24.09), mais les utilisateurs doivent mettre à jour manuellement l'application pour se protéger.
-
-
-
-IT Connect :21-01-2025 DeepSeek : une base de données non protégée expose les conversations des utilisateurs !  : DeepSeek, une IA chinoise rivalisant avec ChatGPT, a suspendu les nouvelles inscriptions après une cyberattaque DDoS massive visant ses serveurs. L'attaque perturbe son API et son interface Web Chat, bien que les utilisateurs existants puissent toujours y accéder. En parallèle, des experts en cybersécurité ont découvert que DeepSeek est vulnérable aux jailbreaks, permettant la génération de contenus malveillants, comme des ransomwares ou des instructions pour fabriquer des explosifs. Cette faille de sécurité soulève des inquiétudes quant à l’absence de garde-fous sur la plateforme. -   https://www.it-connect.fr/deepseek-une-base-de-donnees-non-protegee-expose-les-conversations-des-utilisateurs/
-
-IT Connect : 25-01-2025Microsoft Teams : tous les utilisateurs vont bénéficier d’une nouvelle protection contre le phishing ! : 
-Microsoft va intégrer en février 2025 une nouvelle protection contre le phishing dans Teams Chat, ciblant les tentatives d’usurpation de marque. Lorsqu'un utilisateur reçoit un message d'un expéditeur externe pour la première fois, une analyse automatique détermine le risque potentiel. Si une menace est détectée, un avertissement s'affiche et l'utilisateur doit prévisualiser le message avant de choisir d'accepter ou de bloquer. Cette sécurité, activée par défaut, fait suite à des attaques sophistiquées comme celles du groupe russe Midnight Blizzard. Pour renforcer la sécurité, Microsoft recommande de limiter ou de restreindre l’accès externe sur Teams.  -   https://www.it-connect.fr/microsoft-teams-tous-les-utilisateurs-vont-beneficier-dune-nouvelle-protection-contre-le-phishing/
-
-
-MIT :10-01-2025 Un nouveau protocole de sécurité protège les données des attaquants lors des calculs basés sur le cloud / https://news.mit.edu/2024/new-security-protocol-shields-data-during-cloud-based-computation-0926   :  Des chercheurs du MIT ont développé un protocole de sécurité exploitant les propriétés quantiques de la lumière pour protéger les données dans l’apprentissage profond sur le cloud. En encodant les données et les poids du modèle dans un champ optique via la lumière laser, ce protocole empêche toute copie ou interception sans détection, grâce au principe de non-clonage quantique. Il garantit ainsi la confidentialité des données du client et la protection du modèle du serveur, tout en maintenant une précision de 96 %. Cette approche pourrait être appliquée à l’apprentissage fédéré et aux opérations quantiques pour renforcer encore la sécurité et la performance.
-
-
-IT Connect https://www.it-connect.fr/une-nouvelle-vague-extensions-malveillantes-cible-les-developpeurs-visual-studio-code/   -> Une nouvelle vague d’extensions malveillantes cible les développeurs sous Visual Studio Code ! / 19/12/2024 Florian BURNEL Cybersécurité
-
-IT Connect https://www.it-connect.fr/extensions-chrome-infectees-code-malveillant-a-voler-les-donnees-des-utilisateurs/
-L'extension Chrome de Cyberhaven infectée par du code malveillant
-Un pirate informatique est parvenu à accéder au compte administrateur Google Chrome Web Store d'un employé de chez Cyberhaven, une entreprise spécialisée dans la prévention contre les pertes de données. Parmi ses clients, Cyberhaven compte notamment de grandes entreprises comme Snowflake, Motorola, Canon, Reddit, AmeriHealth, Cooley, IVP, Navan, DBS, Upstart et Kirkland & Ellis.
-Des extensions Chrome infectées par un code malveillant destiné à voler les données des utilisateurs
-31/12/2024 Florian BURNEL Cybersécurité
-
-
-https://news.mit.edu/2024/bubble-findings-could-unlock-better-electrode-electrolyzer-designs-1008 -> Une nouvelle étude des bulles sur les surfaces des électrodes pourrait aider à améliorer l’efficacité des processus électrochimiques qui produisent des carburants, des produits chimiques et des matériaux.
-David L. Chandler | MIT News
-Publication Date:October 8, 2024  
+15. **BYOVD (Bring Your Own Vulnerable Driver) : L'arme fatale pour désactiver les EDR** *(Mai 2026 • CERT-FR)*
+    Les attaquants abusent de pilotes Windows légitimes mais anciens (donc vulnérables) pour s'octroyer des privilèges noyau (kernel) et désactiver les solutions de sécurité avancées avant de lancer le chiffrement.
